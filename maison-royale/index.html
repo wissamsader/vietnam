@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Maison Royale — boutique stay · Saigon District 3</title>
+<meta name="description" content="Maison Royale — a 4.9★ boutique guesthouse tucked in a leafy District 3 alley, Saigon. Colonial calm, modern comfort.">
+<meta property="og:title" content="Maison Royale — Saigon">
+<meta property="og:description" content="Indochine calm in a District 3 alley. 4.9★ boutique stay.">
+<meta property="og:image" content="https://wissamsader.github.io/vietnam/maison-royale/img/01.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1E3A2F;--green2:#2C523F;--cream:#F4EDDE;--gold:#C6A75E;--gold2:#E3CE96;--terra:#A65B3B}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:clip}
+body{background:var(--cream);color:var(--green);font:16px/1.75 'Josefin Sans',sans-serif;font-weight:300}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:600;line-height:1.1}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 5vw}
+a{color:inherit}
+/* deco frame util */
+.deco{border:1px solid var(--gold);position:relative}
+.deco:before{content:'';position:absolute;inset:6px;border:1px solid rgba(198,167,94,.5);pointer-events:none}
+/* hero */
+.hero{background:var(--green);color:var(--cream);padding:64px 0 84px;position:relative}
+.hero .top{display:flex;justify-content:space-between;align-items:center;padding-bottom:44px;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold2)}
+.hero .wrap2{max-width:1080px;margin:0 auto;padding:0 5vw;display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center}
+.label{background:var(--cream);color:var(--green);border-radius:50%;width:min(380px,80vw);aspect-ratio:1;display:grid;place-content:center;text-align:center;padding:40px;position:relative;margin:0 auto}
+.label:before{content:'';position:absolute;inset:10px;border:2px solid var(--green);border-radius:50%}
+.label:after{content:'';position:absolute;inset:16px;border:1px solid rgba(30,58,47,.4);border-radius:50%}
+.label .mr{font-family:'Playfair Display';font-size:15px;letter-spacing:.44em;text-transform:uppercase;color:var(--terra)}
+.label h1{font-size:clamp(34px,4.6vw,52px);margin:10px 0 6px}
+.label .est{font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;color:#5c705f}
+.label .starline{color:var(--gold);letter-spacing:6px;margin-top:12px}
+.heroright h2{font-size:clamp(26px,3.6vw,42px);color:#fff;margin-bottom:18px}
+.heroright h2 em{color:var(--gold2);font-style:italic}
+.heroright p{color:#cfd8c8;max-width:46ch;margin-bottom:12px}
+.heroright .vi{font-size:14px;color:#9db396;font-style:italic}
+.cta{display:inline-block;background:var(--gold);color:var(--green);text-decoration:none;font-weight:600;font-size:14px;letter-spacing:.14em;text-transform:uppercase;padding:15px 32px;margin:22px 12px 0 0}
+.cta.o{background:transparent;color:var(--gold2);border:1px solid var(--gold)}
+/* arches gallery */
+.arches{padding:90px 0}
+.arches .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.arch{position:relative}
+.arch img{width:100%;height:380px;object-fit:cover;border-radius:200px 200px 8px 8px;border:1px solid var(--gold)}
+.arch .cap{text-align:center;margin-top:14px;font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:#6d7f6a}
+/* story */
+.story{padding:20px 0 90px}
+.story .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.story h2{font-size:clamp(28px,4.2vw,48px);margin-bottom:18px}
+.story h2 em{color:var(--terra);font-style:italic}
+.story p{color:#4c5e50;margin-bottom:14px}
+.story .en{font-size:13.5px;color:#7d8b78;letter-spacing:.04em}
+.story img{height:440px;width:100%;object-fit:cover;border-radius:8px}
+.story .imgbox{padding:14px;background:#fff;box-shadow:0 24px 50px -28px rgba(30,58,47,.45)}
+/* amenities */
+.amen{background:var(--green2);color:var(--cream);padding:88px 0}
+.amen h2{text-align:center;font-size:clamp(26px,4vw,44px);color:#fff;margin-bottom:8px}
+.amen .sub{text-align:center;color:#a9bfa2;font-size:13px;letter-spacing:.26em;text-transform:uppercase;margin-bottom:50px}
+.agrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(198,167,94,.35);border:1px solid rgba(198,167,94,.35)}
+.a{background:var(--green2);padding:32px 24px;text-align:center}
+.a .ic{font-size:26px;display:block;margin-bottom:12px;color:var(--gold2)}
+.a h3{font-family:'Josefin Sans';font-weight:600;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:8px}
+.a p{font-size:13.5px;color:#c3d1bc}
+/* rating plaque */
+.plaque{padding:90px 0;text-align:center}
+.plaque .in{display:inline-block;border:1px solid var(--gold);padding:44px 64px;position:relative;background:#fff}
+.plaque .in:before{content:'';position:absolute;inset:7px;border:1px solid rgba(198,167,94,.5)}
+.plaque .stars{color:var(--gold);letter-spacing:8px;font-size:20px}
+.plaque b{font-family:'Playfair Display';font-size:56px;display:block;margin:8px 0 2px}
+.plaque p{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:#6d7f6a}
+/* visit */
+.visit{padding:0 0 96px}
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.visit h2{font-size:clamp(28px,4vw,46px);margin-bottom:22px}
+.vrow{display:grid;grid-template-columns:110px 1fr;padding:14px 0;border-top:1px solid #dbcfae;font-size:15px}
+.vrow .k{color:var(--terra);text-transform:uppercase;font-size:11px;letter-spacing:.22em;padding-top:4px;font-weight:600}
+.visit .imgbox{padding:14px;background:#fff;box-shadow:0 24px 50px -28px rgba(30,58,47,.45)}
+.visit img{height:400px;width:100%;object-fit:cover}
+.visit .cta{background:var(--green);color:var(--cream)}
+.visit .cta.o{background:transparent;color:var(--green);border:1px solid var(--green)}
+footer{background:var(--green);color:#9db396;font-size:12.5px;padding:26px 0 110px;letter-spacing:.06em}
+footer .wrap{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+/* sticky bar */
+.bar{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:8px;background:var(--green);border:1px solid var(--gold);padding:8px;z-index:50;box-shadow:0 18px 46px rgba(0,0,0,.4)}
+.bar a{text-decoration:none;font-weight:600;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;padding:12px 18px;color:var(--cream);white-space:nowrap}
+.bar a.p{background:var(--gold);color:var(--green)}
+.bar a.z{background:#0068FF;color:#fff}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s,transform .9s}
+.rv.on{opacity:1;transform:none}
+@media(max-width:900px){
+ .hero .wrap2,.story .wrap,.visit .wrap{grid-template-columns:1fr}
+ .arches .wrap{grid-template-columns:1fr}
+ .arch img{height:300px}
+ .agrid{grid-template-columns:1fr 1fr}
+ .story img,.visit img{height:300px}
+ .plaque .in{padding:30px 30px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+ <div class="wrap top"><span>Saigon · District 3</span><span>Est. with love</span><span>4.9 ★</span></div>
+ <div class="wrap2">
+  <div class="label rv">
+   <span class="mr">Maison</span>
+   <h1>ROYALE</h1>
+   <span class="est">129/4 Lý Chính Thắng · Saïgon</span>
+   <div class="starline">★★★★★</div>
+  </div>
+  <div class="heroright rv">
+   <h2>A quiet <em>maison</em> in the leafiest alley of District 3</h2>
+   <p>Behind the ivy and the iron gate hides a small boutique guesthouse — tall windows, soft linen, plants in every corner. The city hums two minutes away; here, it whispers.</p>
+   <p class="vi">Căn nhà nhỏ kiểu Đông Dương trong hẻm xanh Lý Chính Thắng — yên tĩnh, tinh tế, 4.9★ trên Google.</p>
+   <a class="cta" href="tel:+84908917999">Reserve</a>
+   <a class="cta o" href="https://zalo.me/84908917999" target="_blank" rel="noopener">Zalo</a>
+  </div>
+ </div>
+</header>
+
+<section class="arches">
+ <div class="wrap">
+  <div class="arch rv"><img src="img/01.jpg" alt="Room"><div class="cap">Les chambres</div></div>
+  <div class="arch rv"><img src="img/02.jpg" alt="Window seat"><div class="cap">Le coin lecture</div></div>
+  <div class="arch rv"><img src="img/04.jpg" alt="Entrance"><div class="cap">L'entrée</div></div>
+ </div>
+</section>
+
+<section class="story">
+ <div class="wrap">
+  <div class="rv">
+   <h2>Saigon, <em>doucement</em></h2>
+   <p>Maison Royale is for travellers who like their Saigon in the morning: coffee dripping slowly, light through the shutters, a book by the attic window. Rooms are simple and precise — good beds, good showers, silence.</p>
+   <p>District 3 is the city's most graceful neighbourhood — French villas, tamarind trees, the best cơm tấm and cafés within a ten-minute stroll.</p>
+   <p class="en">— Quiet alley · self check-in available · hosts on Zalo all day —</p>
+  </div>
+  <div class="imgbox rv"><img src="img/03.jpg" alt="Maison Royale bedroom"></div>
+ </div>
+</section>
+
+<section class="amen">
+ <div class="wrap">
+  <h2 class="rv">The house</h2>
+  <p class="sub rv">petites attentions · every day</p>
+  <div class="agrid">
+   <div class="a rv"><span class="ic">🛏</span><h3>Linen &amp; light</h3><p>Crisp beds, blackout curtains, warm lamps — sleep like a local aristocrat.</p></div>
+   <div class="a rv"><span class="ic">🌿</span><h3>Green corners</h3><p>Plants on every floor, a reading nook under the roof window.</p></div>
+   <div class="a rv"><span class="ic">☕</span><h3>Coffee nearby</h3><p>District 3's café row starts at the alley mouth — ask us for the list.</p></div>
+   <div class="a rv"><span class="ic">🔑</span><h3>Easy arrival</h3><p>Self check-in &amp; luggage help — tell us your landing time on Zalo.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="plaque">
+ <div class="in rv">
+  <div class="stars">★★★★★</div>
+  <b>4.9</b>
+  <p>Google rating · 110+ guests</p>
+ </div>
+</section>
+
+<section class="visit">
+ <div class="wrap">
+  <div>
+   <h2 class="rv">Find the maison</h2>
+   <div class="vrow"><span class="k">Address</span><span>129/4 Lý Chính Thắng, Xuân Hòa, Quận 3, TP.HCM</span></div>
+   <div class="vrow"><span class="k">Phone</span><span>0908 917 999</span></div>
+   <div class="vrow"><span class="k">Zalo</span><span>0908 917 999 — rates, dates &amp; late check-in</span></div>
+   <div class="vrow"><span class="k">Arrive</span><span>into the alley at 129 Lý Chính Thắng — look for the ivy gate at /4</span></div>
+   <p style="margin-top:22px"><a class="cta" href="tel:+84908917999">Call the house</a> <a class="cta o" href="https://www.google.com/maps?cid=9415087915880951507" target="_blank" rel="noopener">Directions ↗</a></p>
+  </div>
+  <div class="imgbox rv"><img src="img/05.jpg" alt="Maison Royale detail"></div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap"><span>MAISON ROYALE · SAIGON</span><span>129/4 Lý Chính Thắng, Q3 · 0908 917 999</span><span><a href="https://www.google.com/maps?cid=9415087915880951507">Google Maps ↗</a></span></div>
+</footer>
+
+<nav class="bar">
+ <a class="p" href="tel:+84908917999">Call</a>
+ <a class="z" href="https://zalo.me/84908917999" target="_blank" rel="noopener">Zalo</a>
+ <a href="https://www.google.com/maps?cid=9415087915880951507" target="_blank" rel="noopener">Map</a>
+</nav>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.rv:not(.on)').forEach(el=>el.classList.add('on')),1100);
+</script>
+</body>
+</html>

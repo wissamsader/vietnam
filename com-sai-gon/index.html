@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Com Sai Gon — cơm nhà Sài Gòn · Phú Nhuận</title>
+<meta name="description" content="Com Sai Gon — quán cơm tấm & cơm nhà 4.9★ trong hẻm Thích Quảng Đức, Phú Nhuận. Chủ quán thân thiện, nói tiếng Anh tốt.">
+<meta property="og:title" content="Com Sai Gon — Phú Nhuận, TP.HCM">
+<meta property="og:description" content="Home-style Saigon rice, 4.9★ on Google. The owner welcomes you like family.">
+<meta property="og:image" content="https://wissamsader.github.io/vietnam/com-sai-gon/img/01.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400&family=Be+Vietnam+Pro:wght@400;500;700&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--rice:#FBF6EA;--leaf:#7FA86F;--leaf2:#4F7A43;--ink:#33301F;--clay:#C96F3B;--soup:#F0E4C8}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:clip}
+body{background:var(--rice);color:var(--ink);font:16px/1.7 'Be Vietnam Pro',sans-serif}
+h1,h2,h3{font-family:'Lora',serif;line-height:1.12}
+.hand{font-family:'Dancing Script',cursive}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 5vw}
+/* hero */
+.hero{padding:70px 0 64px;background:linear-gradient(180deg,#F3EAD4,var(--rice))}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.kicker{color:var(--leaf2);font-size:13px;letter-spacing:.2em;text-transform:uppercase;font-weight:700}
+.hero h1{font-size:clamp(40px,5.8vw,76px);margin:12px 0 6px}
+.hero h1 em{color:var(--clay);font-style:italic}
+.hand.sub{font-size:clamp(22px,2.6vw,30px);color:var(--leaf2);margin-bottom:18px;display:block}
+.hero p.lead{color:#5c563e;max-width:46ch;margin-bottom:28px}
+.hero p.lead i{color:#8f8867;font-size:14.5px}
+.cta{display:inline-block;background:var(--leaf2);color:#fff;text-decoration:none;font-weight:700;font-size:15.5px;padding:15px 30px;border-radius:40px;margin-right:12px}
+.cta.o{background:transparent;color:var(--leaf2);border:2px solid var(--leaf)}
+.heroimg{position:relative}
+.heroimg img{width:100%;height:440px;object-fit:cover;border-radius:50% 50% 14px 14px / 32% 32% 14px 14px;border:6px solid #fff;box-shadow:0 24px 50px -22px rgba(51,48,31,.4)}
+.rate{position:absolute;bottom:18px;left:-16px;background:#fff;border-radius:14px;padding:12px 18px;box-shadow:0 12px 30px -10px rgba(51,48,31,.3);font-size:13.5px}
+.rate b{font-family:'Lora';font-size:22px;color:var(--clay)}
+/* tray diagram */
+.tray{background:var(--leaf2);color:var(--soup);padding:82px 0}
+.tray h2{font-size:clamp(26px,4vw,46px);color:#fff;text-align:center;margin-bottom:8px}
+.tray .sub{text-align:center;color:#cfe0bd;margin-bottom:48px}
+.tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.tcell{background:rgba(255,255,255,.09);border:2px dashed rgba(255,255,255,.35);border-radius:16px;padding:22px 18px;text-align:center}
+.tcell .ic{font-size:34px;display:block;margin-bottom:10px}
+.tcell h3{font-size:18px;color:#fff;margin-bottom:6px}
+.tcell p{font-size:13.5px;color:#d8e6c8}
+.tray .note{margin:40px auto 0;text-align:center;font-size:15px;color:#eaf2df}
+.tray .note .hand{font-size:26px;color:#fff}
+/* menu cards */
+.menu{padding:82px 0}
+.menu h2{font-size:clamp(26px,4vw,46px);margin-bottom:8px}
+.menu .sub{color:#8f8867;margin-bottom:40px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 14px 34px -20px rgba(51,48,31,.35)}
+.card img{height:200px;width:100%;object-fit:cover}
+.card .in{padding:16px 18px 20px}
+.card h3{font-size:19px}
+.card .en{font-size:13px;color:#8f8867;font-style:italic}
+.card p{font-size:14.5px;color:#5c563e;margin-top:8px}
+/* story */
+.story{background:var(--soup);padding:82px 0}
+.story .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center}
+.story img{border-radius:16px;height:400px;width:100%;object-fit:cover;border:6px solid #fff}
+.story h2{font-size:clamp(26px,4vw,44px);margin-bottom:16px}
+.story p{color:#5c563e;margin-bottom:12px}
+.enbox{background:#fff;border-left:5px solid var(--clay);border-radius:0 12px 12px 0;padding:16px 20px;margin-top:20px;font-size:14.5px}
+/* reviews */
+.revs{padding:82px 0}
+.revs h2{font-size:clamp(26px,4vw,44px);text-align:center;margin-bottom:40px}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.rev{background:#fff;border-radius:16px;padding:24px;box-shadow:0 14px 34px -22px rgba(51,48,31,.4);position:relative}
+.rev:before{content:'"';font-family:'Lora';font-size:64px;color:var(--leaf);position:absolute;top:-6px;left:14px;opacity:.5}
+.rev p{font-size:15px;padding-top:16px}
+.rev .who{margin-top:14px;font-weight:700;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--clay)}
+.stars{color:var(--clay);letter-spacing:3px}
+/* visit */
+.visit{background:var(--ink);color:var(--rice);padding:84px 0}
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.visit h2{font-size:clamp(26px,4vw,44px);color:#fff;margin-bottom:22px}
+.vrow{display:grid;grid-template-columns:110px 1fr;padding:14px 0;border-top:1px solid #4b4733;font-size:15.5px}
+.vrow .k{color:var(--leaf);text-transform:uppercase;font-size:11.5px;letter-spacing:.18em;padding-top:4px;font-weight:700}
+.visit img{border-radius:16px;height:400px;width:100%;object-fit:cover;border:5px solid var(--leaf2)}
+footer{background:var(--ink);color:#8f8867;font-size:13px;padding:26px 0 110px;border-top:1px solid #4b4733}
+footer a{color:inherit}
+/* sticky bar */
+.bar{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:8px;background:#fff;border-radius:50px;padding:8px;z-index:50;box-shadow:0 16px 44px rgba(51,48,31,.35)}
+.bar a{text-decoration:none;font-weight:700;font-size:14px;padding:11px 20px;border-radius:40px;color:var(--ink);white-space:nowrap}
+.bar a.p{background:var(--leaf2);color:#fff}
+.bar a.z{background:#0068FF;color:#fff}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.rv.on{opacity:1;transform:none}
+@media(max-width:880px){
+ .hero .wrap,.story .wrap,.visit .wrap{grid-template-columns:1fr}
+ .heroimg img{height:300px}
+ .tgrid{grid-template-columns:repeat(2,1fr)}
+ .visit img{height:280px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+ <div class="wrap">
+  <div>
+   <span class="kicker">Cơm nhà · hẻm 86 Thích Quảng Đức · Phú Nhuận</span>
+   <h1>Com <em>Sai Gon</em></h1>
+   <span class="hand sub">— cơm nhà nấu, như má nấu —</span>
+   <p class="lead">Dĩa cơm tấm nóng hổi, món kho món xào đổi mỗi ngày, canh nêm vừa miệng. Quán nhỏ trong hẻm, chủ quán niềm nở — khách Tây khen "the owner made us feel like family".<br><i>Home-style Saigon rice in a little Phú Nhuận alley — 4.9★ from 1,300+ Google reviews.</i></p>
+   <a class="cta" href="tel:+84906680222">Gọi ngay</a>
+   <a class="cta o" href="https://zalo.me/84906680222" target="_blank" rel="noopener">Nhắn Zalo</a>
+  </div>
+  <div class="heroimg rv">
+   <img src="img/01.jpg" alt="Mâm cơm Com Sai Gon">
+   <div class="rate"><b>4,9★</b> · 1.300+ đánh giá Google</div>
+  </div>
+ </div>
+</header>
+
+<section class="tray">
+ <div class="wrap">
+  <h2 class="rv">Một mâm đủ vị</h2>
+  <p class="sub rv">Gọi "một phần đầy đủ" — quán tự dọn lên như cơm nhà</p>
+  <div class="tgrid">
+   <div class="tcell rv"><span class="ic">🍚</span><h3>Cơm tấm nóng</h3><p>hạt tấm dẻo thơm, nấu mới liên tục</p></div>
+   <div class="tcell rv"><span class="ic">🍖</span><h3>Món mặn</h3><p>sườn nướng · gà chiên · thịt kho — đổi món mỗi ngày</p></div>
+   <div class="tcell rv"><span class="ic">🥣</span><h3>Canh nhà</h3><p>canh rong biển, canh khổ qua… nêm kiểu má nấu</p></div>
+   <div class="tcell rv"><span class="ic">🥗</span><h3>Rau & đồ chua</h3><p>dưa leo, đồ chua giòn — cân lại vị béo</p></div>
+  </div>
+  <p class="note rv"><span class="hand">"Best cơm tấm I have ever had"</span><br>— khách review trên Google</p>
+ </div>
+</section>
+
+<section class="menu">
+ <div class="wrap">
+  <h2 class="rv">Món "ruột" của quán</h2>
+  <p class="sub rv">Giá bình dân, phần đầy — xem bảng món tại quán, hôm nào hết sớm là… hết thiệt</p>
+  <div class="cards">
+   <article class="card rv"><img src="img/06.jpg" alt="Cơm gà chiên"><div class="in"><h3>Cơm gà chiên sả</h3><div class="en">lemongrass fried chicken rice</div><p>Da giòn rụm, thơm sả, ăn với mắm ớt là "bao ghiền".</p></div></article>
+   <article class="card rv"><img src="img/03.jpg" alt="Gà cuộn"><div class="in"><h3>Sườn nướng mật</h3><div class="en">honey-glazed grilled pork chop</div><p>Ướp qua đêm, nướng cháy cạnh — món được gọi nhiều nhất.</p></div></article>
+   <article class="card rv"><img src="img/09.jpg" alt="Mâm cơm"><div class="in"><h3>Phần cơm đầy đủ</h3><div class="en">the full home tray</div><p>Cơm + món mặn + canh + rau. Một phần là no tới chiều.</p></div></article>
+   <article class="card rv"><img src="img/12.jpg" alt="Chè"><div class="in"><h3>Chè mè đen tráng miệng</h3><div class="en">black sesame sweet soup</div><p>Nấu tại quán — ngọt thanh, ấm bụng, đúng kiểu "ăn xong phải có ngọt".</p></div></article>
+  </div>
+ </div>
+</section>
+
+<section class="story">
+ <div class="wrap">
+  <img class="rv" src="img/08.jpg" alt="Quán Com Sai Gon">
+  <div class="rv">
+   <h2>Quán nhỏ trong hẻm, tiếng lành đồn xa</h2>
+   <p>Com Sai Gon nằm trong hẻm 86 Thích Quảng Đức — chỗ ngồi giản dị, nhạc nhẹ, cơm dọn nhanh. Khách quen là dân văn phòng quanh Phú Nhuận; khách lạ là du khách lần theo điểm 4,9★ trên Google mà tới.</p>
+   <p>Chủ quán nói tiếng Anh tốt, hay đứng ra gợi ý món cho khách nước ngoài — nhiều review gọi đây là "hidden gem" của Sài Gòn.</p>
+   <div class="enbox">🇬🇧 "The owner was warm, welcoming, and spoke great English — made us feel very comfortable as tourists. Amazing service and atmosphere." — Liem, Google</div>
+  </div>
+ </div>
+</section>
+
+<section class="revs">
+ <div class="wrap">
+  <h2 class="rv">Khách thương quán</h2>
+  <div class="rgrid">
+   <div class="rev rv"><p>Best cơm tấm I have ever had. The food was incredible and full of authentic flavor. We will definitely be back.</p><div class="stars">★★★★★</div><div class="who">Liem · Google</div></div>
+   <div class="rev rv"><p>The combination of rice, meat and salad was delicious. The service is very pleasant — everyone is so friendly.</p><div class="stars">★★★★★</div><div class="who">Saif · Google</div></div>
+   <div class="rev rv"><p>Kind and delicious. I hope everyone enjoys this food!</p><div class="stars">★★★★★</div><div class="who">고제현 · Google</div></div>
+  </div>
+ </div>
+</section>
+
+<section class="visit">
+ <div class="wrap">
+  <div>
+   <h2 class="rv">Ghé ăn cơm</h2>
+   <div class="vrow"><span class="k">Địa chỉ</span><span>86/16 Thích Quảng Đức, P. Đức Nhuận (Phú Nhuận), TP.HCM</span></div>
+   <div class="vrow"><span class="k">Giờ mở</span><span>T2–T6: 10:00–20:00 · T7–CN: 10:00–15:30</span></div>
+   <div class="vrow"><span class="k">Điện thoại</span><span>0906 680 222</span></div>
+   <div class="vrow"><span class="k">Zalo</span><span>0906 680 222 — đặt cơm văn phòng, cơm mang về</span></div>
+   <div class="vrow"><span class="k">Facebook</span><span><a href="https://www.facebook.com/comsaigon.net" target="_blank" rel="noopener" style="color:var(--leaf)">fb.com/comsaigon.net ↗</a></span></div>
+   <p style="margin-top:22px"><a class="cta" href="tel:+84906680222">Gọi 0906 680 222</a> <a class="cta o" style="color:var(--rice);border-color:var(--leaf)" href="https://www.google.com/maps?cid=16786797399773142628" target="_blank" rel="noopener">Chỉ đường ↗</a></p>
+  </div>
+  <img class="rv" src="img/02.jpg" alt="Món ăn Com Sai Gon">
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">Com Sai Gon · 86/16 Thích Quảng Đức, Phú Nhuận · 0906 680 222 · <a href="https://www.google.com/maps?cid=16786797399773142628">Google Maps</a> · ★ 4,9</div>
+</footer>
+
+<nav class="bar">
+ <a class="p" href="tel:+84906680222">📞 Gọi</a>
+ <a class="z" href="https://zalo.me/84906680222" target="_blank" rel="noopener">Zalo</a>
+ <a href="https://www.google.com/maps?cid=16786797399773142628" target="_blank" rel="noopener">🗺 Bản đồ</a>
+</nav>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.rv:not(.on)').forEach(el=>el.classList.add('on')),1100);
+</script>
+</body>
+</html>

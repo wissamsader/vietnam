@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>My Friend Hotel — your friend in Saigon · District 5</title>
+<meta name="description" content="My Friend Hotel — honest budget rooms, rooftop views and a small pool on Trần Hưng Đạo, Saigon. 420+ Google reviews.">
+<meta property="og:title" content="My Friend Hotel — Saigon">
+<meta property="og:description" content="Your friend in Saigon. Honest rooms, rooftop, small pool — budget done right.">
+<meta property="og:image" content="https://wissamsader.github.io/vietnam/my-friend-hotel/img/01.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Bitter:ital,wght@0,500;0,700;0,900;1,400&family=Be+Vietnam+Pro:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FAF3E7;--ink:#2E2A24;--red:#E04F39;--tape:#F7D774;--blue:#4A7BA6}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:clip}
+body{background:var(--cream);color:var(--ink);font:16px/1.7 'Be Vietnam Pro',sans-serif}
+h1,h2,h3{font-family:'Bitter',serif;font-weight:900;line-height:1.06}
+.hand{font-family:'Caveat',cursive}
+img{max-width:100%;display:block}
+.wrap{max-width:1100px;margin:0 auto;padding:0 5vw}
+a{color:inherit}
+/* hero */
+.hero{padding:78px 0 66px;position:relative;background:
+ radial-gradient(circle at 12% 18%,rgba(224,79,57,.07),transparent 40%),
+ radial-gradient(circle at 88% 80%,rgba(74,123,166,.08),transparent 40%),var(--cream)}
+.hero .wrap{display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:center}
+.hand.hi{font-size:clamp(26px,3.4vw,38px);color:var(--red);display:block;margin-bottom:8px}
+.hero h1{font-size:clamp(42px,6vw,80px)}
+.hero h1 em{font-style:italic;color:var(--red)}
+.hero p.lead{margin:20px 0 28px;color:#5d564a;max-width:46ch}
+.hero p.lead .vi{display:block;font-size:14px;color:#8d8577;font-style:italic;margin-top:8px}
+.cta{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-family:'Bitter';font-size:15.5px;padding:15px 30px;border-radius:10px;margin-right:12px;box-shadow:0 8px 0 -3px #a83a29}
+.cta.o{background:transparent;color:var(--red);border:2px solid var(--red);box-shadow:none}
+/* polaroid stack */
+.stack{position:relative;height:520px}
+.pol{position:absolute;background:#fff;padding:12px 12px 44px;box-shadow:0 18px 40px -18px rgba(46,42,36,.45);border-radius:4px}
+.pol img{width:100%;height:100%;object-fit:cover}
+.pol .cap{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-family:'Caveat';font-size:19px;color:#5d564a}
+.pol.p1{width:62%;height:330px;top:0;left:0;transform:rotate(-3deg);z-index:2}
+.pol.p2{width:54%;height:280px;top:120px;right:0;transform:rotate(2.5deg);z-index:3}
+.pol.p3{width:46%;height:230px;bottom:0;left:16%;transform:rotate(-1deg);z-index:1}
+.tape{position:absolute;width:90px;height:26px;background:var(--tape);opacity:.85;top:-12px;left:50%;transform:translateX(-50%) rotate(-4deg);box-shadow:0 2px 6px rgba(0,0,0,.12)}
+/* notes */
+.notes{background:#fff;padding:80px 0;border-top:3px dashed #e5d9c4;border-bottom:3px dashed #e5d9c4}
+.notes h2{text-align:center;font-size:clamp(28px,4vw,46px);margin-bottom:10px}
+.notes .hand.sub{display:block;text-align:center;font-size:26px;color:var(--blue);margin-bottom:48px}
+.ngrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.note{background:var(--cream);border-radius:8px;padding:26px 22px;position:relative;box-shadow:0 12px 30px -18px rgba(46,42,36,.4)}
+.note:nth-child(odd){transform:rotate(-.6deg)}
+.note:nth-child(even){transform:rotate(.7deg)}
+.note:before{content:'';position:absolute;top:-10px;left:24px;width:64px;height:20px;background:var(--tape);opacity:.8;transform:rotate(-3deg)}
+.note .hand{font-size:22px;color:var(--red);display:block;margin-bottom:8px}
+.note p{font-size:14.5px;color:#5d564a}
+/* rooftop */
+.roof{padding:84px 0}
+.roof .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.roof img{border-radius:12px;height:400px;width:100%;object-fit:cover;border:8px solid #fff;box-shadow:0 22px 46px -24px rgba(46,42,36,.5)}
+.roof h2{font-size:clamp(26px,4vw,44px);margin-bottom:16px}
+.roof h2 .hand{color:var(--blue);font-size:1.2em}
+.roof p{color:#5d564a;margin-bottom:12px}
+.fact{display:flex;gap:10px;align-items:baseline;border-bottom:1px dashed #dccfb8;padding:10px 2px;font-size:15px}
+.fact .hand{color:var(--red);font-size:20px;min-width:26px}
+/* rating */
+.rate{background:var(--blue);color:#fff;padding:70px 0;text-align:center}
+.rate .hand{font-size:clamp(30px,4.4vw,44px);display:block;margin-bottom:8px;color:var(--tape)}
+.rate p{max-width:56ch;margin:0 auto;color:#dbe7f2}
+.rate b{font-family:'Bitter';font-size:44px;display:block;margin-top:16px}
+/* gallery */
+.gal{padding:84px 0 60px}
+.gal .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gal .pol2{background:#fff;padding:10px 10px 34px;box-shadow:0 14px 32px -18px rgba(46,42,36,.45);border-radius:4px}
+.gal .pol2:nth-child(odd){transform:rotate(-1.2deg)}
+.gal .pol2:nth-child(even){transform:rotate(1deg)}
+.gal img{height:230px;width:100%;object-fit:cover}
+.gal .cap{text-align:center;font-family:'Caveat';font-size:18px;color:#5d564a;padding-top:8px}
+/* visit */
+.visit{padding:30px 0 90px}
+.visit .card{background:#fff;border-radius:14px;padding:44px;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;box-shadow:0 24px 50px -28px rgba(46,42,36,.45)}
+.visit h2{font-size:clamp(26px,3.6vw,40px);margin-bottom:20px}
+.vrow{display:grid;grid-template-columns:110px 1fr;padding:13px 0;border-top:1px dashed #e5d9c4;font-size:15px}
+.vrow .k{color:var(--red);text-transform:uppercase;font-size:11px;letter-spacing:.16em;padding-top:4px;font-weight:700}
+.visit img{border-radius:10px;height:360px;width:100%;object-fit:cover}
+footer{padding:0 0 110px;color:#8d8577;font-size:13px;text-align:center}
+/* sticky bar */
+.bar{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:8px;background:#fff;border-radius:14px;padding:8px;z-index:50;box-shadow:0 18px 46px rgba(46,42,36,.35);border:2px solid var(--ink)}
+.bar a{text-decoration:none;font-weight:700;font-family:'Bitter';font-size:13.5px;padding:11px 18px;border-radius:9px;color:var(--ink);white-space:nowrap}
+.bar a.p{background:var(--red);color:#fff}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
+.rv.on{opacity:1;transform:none}
+@media(max-width:900px){
+ .hero .wrap,.roof .wrap{grid-template-columns:1fr}
+ .stack{height:430px}
+ .gal .grid{grid-template-columns:1fr}
+ .gal img{height:220px}
+ .visit .card{grid-template-columns:1fr;padding:26px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+ <div class="wrap">
+  <div>
+   <span class="hand hi">xin chào, bạn mới tới Sài Gòn hả? →</span>
+   <h1>MY <em>FRIEND</em> HOTEL</h1>
+   <p class="lead">The name is the promise: honest rooms at honest prices, a rooftop with district views, a small pool to cool off — and a front desk that treats you like, well, a friend.
+   <span class="vi">Phòng sạch giá thật, sân thượng ngắm phố, hồ bơi nhỏ — và lễ tân thân thiện như một người bạn.</span></p>
+   <a class="cta" href="tel:+842839245678">Call reception</a>
+   <a class="cta o" href="https://www.google.com/maps?cid=10932936298715317515" target="_blank" rel="noopener">Find us</a>
+  </div>
+  <div class="stack rv">
+   <div class="pol p1"><span class="tape"></span><img src="img/01.jpg" alt="Pool"><span class="cap">the little pool ↑</span></div>
+   <div class="pol p2"><img src="img/02.jpg" alt="Room"><span class="cap">deluxe room, real photo!</span></div>
+   <div class="pol p3"><img src="img/04.jpg" alt="Corner"><span class="cap">our red chair corner</span></div>
+  </div>
+ </div>
+</header>
+
+<section class="notes">
+ <div class="wrap">
+  <h2 class="rv">Notes from your friend</h2>
+  <span class="hand sub rv">— những điều bạn nên biết —</span>
+  <div class="ngrid">
+   <div class="note rv"><span class="hand">Where you are</span><p>572b/4 Trần Hưng Đạo — between Chợ Lớn and District 1. Walk out, eat everything.</p></div>
+   <div class="note rv"><span class="hand">The rooms</span><p>AC, hot water, proper mattresses. Budget means the price, not the sleep.</p></div>
+   <div class="note rv"><span class="hand">The rooftop</span><p>Morning coffee with a view over the district's rooftops. Sunset's even better.</p></div>
+   <div class="note rv"><span class="hand">The pool</span><p>Small but real — a quick dip after a hot Saigon afternoon fixes everything.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="roof">
+ <div class="wrap">
+  <img class="rv" src="img/05.jpg" alt="Rooftop view">
+  <div class="rv">
+   <h2>A friend with <span class="hand">a view</span></h2>
+   <p>From the rooftop you see Saigon the way locals do — water tanks, tangled wires, laundry lines and a skyline that never sits still. Bring your coffee up. Stay a while.</p>
+   <div class="fact"><span class="hand">✓</span> 420+ reviews on Google — a District 5 budget classic</div>
+   <div class="fact"><span class="hand">✓</span> 24/7 reception — landing late is never a problem</div>
+   <div class="fact"><span class="hand">✓</span> Grab &amp; taxi pickup point right at the alley mouth</div>
+  </div>
+ </div>
+</section>
+
+<section class="rate">
+ <div class="wrap">
+  <span class="hand rv">what the guestbook says</span>
+  <p class="rv">Hundreds of travellers have passed through these rooms — students, backpackers, families visiting Chợ Lớn. The rating they left behind:</p>
+  <b class="rv">4.3★ · 420+ Google reviews</b>
+ </div>
+</section>
+
+<section class="gal">
+ <div class="wrap">
+  <div class="grid">
+   <div class="pol2 rv"><img src="img/03.jpg" alt=""><div class="cap">white &amp; bright rooms</div></div>
+   <div class="pol2 rv"><img src="img/06.jpg" alt=""><div class="cap">green-wall twin</div></div>
+   <div class="pol2 rv"><img src="img/04.jpg" alt=""><div class="cap">sunset over the hood</div></div>
+  </div>
+ </div>
+</section>
+
+<section class="visit">
+ <div class="wrap">
+  <div class="card rv">
+   <div>
+    <h2>Come say hi 👋</h2>
+    <div class="vrow"><span class="k">Address</span><span>572b/4 Trần Hưng Đạo, Chợ Quán, Quận 5, TP.HCM</span></div>
+    <div class="vrow"><span class="k">Phone</span><span>028 3924 5678 — reception, EN/VI</span></div>
+    <div class="vrow"><span class="k">Check-in</span><span>24/7 — call ahead if you land after midnight</span></div>
+    <p style="margin-top:20px"><a class="cta" href="tel:+842839245678">Call 028 3924 5678</a> <a class="cta o" href="https://www.google.com/maps?cid=10932936298715317515" target="_blank" rel="noopener">Directions ↗</a></p>
+   </div>
+   <img src="img/02.jpg" alt="My Friend Hotel room">
+  </div>
+ </div>
+</section>
+
+<footer>My Friend Hotel · 572b/4 Trần Hưng Đạo, Q5, TP.HCM · 028 3924 5678 · ★ 4.3 (420+)</footer>
+
+<nav class="bar">
+ <a class="p" href="tel:+842839245678">📞 Call</a>
+ <a href="https://www.google.com/maps?cid=10932936298715317515" target="_blank" rel="noopener">🗺 Map</a>
+</nav>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+setTimeout(()=>document.querySelectorAll('.rv:not(.on)').forEach(el=>el.classList.add('on')),1100);
+</script>
+</body>
+</html>
