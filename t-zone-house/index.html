@@ -84,7 +84,7 @@ a{color:inherit}
 .visit .cta.o{background:transparent;color:var(--paper);border-color:var(--lime)}
 footer{background:var(--ink);color:#8a8f80;font-size:13px;padding:26px 0 110px;border-top:1px solid #3c403a}
 /* sticky bar */
-.bar{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:8px;background:#fff;border:3px solid var(--ink);border-radius:14px;padding:7px;z-index:50;box-shadow:5px 5px 0 var(--ink)}
+.bar{position:fixed;bottom:calc(12px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:50;display:flex;gap:8px;background:#fff;border:3px solid var(--ink);padding:8px;border-radius:6px;box-shadow:0 16px 40px -14px rgba(0,0,0,.5);z-index:50}
 .bar a{text-decoration:none;font-family:'Archivo Black';text-transform:uppercase;font-size:12.5px;padding:11px 16px;border-radius:8px;color:var(--ink);white-space:nowrap}
 .bar a.p{background:var(--lime)}
 .bar a.z{background:#0068FF;color:#fff}
@@ -99,6 +99,13 @@ footer{background:var(--ink);color:#8a8f80;font-size:13px;padding:26px 0 110px;b
  .gal img{height:150px}
  .visit img{height:280px}
 }
+
+/* mobile hard-rules (07-13) */
+*{-webkit-tap-highlight-color:transparent}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+@media(max-width:700px){footer{padding-left:18px!important;padding-right:18px!important}}
+.bar::after{content:'';position:absolute;inset:4px;border:1.5px dashed #f26d5b;border-radius:inherit;pointer-events:none;opacity:.65}.bar a.p{background:#f26d5b!important;border-radius:999px;animation:vnp 2.6s ease-in-out infinite}@keyframes vnp{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+@media(max-width:390px){.bar a{font-size:.78rem;padding-left:10px;padding-right:10px}}
 </style>
 </head>
 <body>

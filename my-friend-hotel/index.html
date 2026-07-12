@@ -84,7 +84,7 @@ a{color:inherit}
 .visit img{border-radius:10px;height:360px;width:100%;object-fit:cover}
 footer{padding:0 0 110px;color:#8d8577;font-size:13px;text-align:center}
 /* sticky bar */
-.bar{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);display:flex;gap:8px;background:#fff;border-radius:14px;padding:8px;z-index:50;box-shadow:0 18px 46px rgba(46,42,36,.35);border:2px solid var(--ink)}
+.bar{position:fixed;bottom:0;left:0;right:0;z-index:50;display:flex;gap:8px;justify-content:center;background:#fff;border-left:0;border-right:0;border-bottom:0;padding:9px 12px calc(9px + env(safe-area-inset-bottom));z-index:50;border:2px solid var(--ink)}
 .bar a{text-decoration:none;font-weight:700;font-family:'Bitter';font-size:13.5px;padding:11px 18px;border-radius:9px;color:var(--ink);white-space:nowrap}
 .bar a.p{background:var(--red);color:#fff}
 .rv{opacity:0;transform:translateY(24px);transition:opacity .8s,transform .8s}
@@ -96,6 +96,13 @@ footer{padding:0 0 110px;color:#8d8577;font-size:13px;text-align:center}
  .gal img{height:220px}
  .visit .card{grid-template-columns:1fr;padding:26px}
 }
+
+/* mobile hard-rules (07-13) */
+*{-webkit-tap-highlight-color:transparent}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+@media(max-width:700px){footer{padding-left:18px!important;padding-right:18px!important}}
+.bar{box-shadow:0 0 0 1.5px #4fa3d9,0 0 18px -2px #4fa3d9}.bar a.p{background:#4fa3d9!important;border-radius:10px}
+@media(max-width:390px){.bar a{font-size:.78rem;padding-left:10px;padding-right:10px}}
 </style>
 </head>
 <body>
