@@ -103,17 +103,23 @@ footer a{color:inherit}
 .band{padding-left:16px!important;padding-right:16px!important}
 .bar::before{content:'';position:absolute;top:-6px;left:0;right:0;height:7px;background:linear-gradient(135deg,#d8401f 50%,transparent 50%) 0 0/10px 7px,linear-gradient(225deg,#d8401f 50%,transparent 50%) 5px 0/10px 7px}.bar a.p{background:#d8401f!important;border-radius:8px;box-shadow:3px 3px 0 rgba(0,0,0,.45)}
 @media(max-width:390px){.bar a{font-size:.78rem;padding-left:10px;padding-right:10px}}
+
+/* VI/EN toggle (07-13) */
+html.alt .bse{display:none!important}
+html:not(.alt) .tr{display:none!important}
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;z-index:80;cursor:pointer;border:0;font-weight:700;font-size:11.5px;letter-spacing:.14em;padding:9px 14px;border-radius:999px;line-height:1}
 </style>
 </head>
 <body>
 
+<button class="lgx" style="background:#d8401f;color:#fff8ee;border:2px solid #fff8ee" onclick="document.documentElement.classList.toggle('alt')" aria-label="Language"><span class="bse">EN</span><span class="tr">VI</span></button>
 <header class="hero">
  <div class="wrap">
   <div>
    <span class="mich"><span class="dot"></span> Michelin Guide · quán được đề xuất</span>
    <h1>Bún chả cá <span class="num">109</span></h1>
    <p class="lead">Tô bún chả cá "chuẩn Đà Nẵng": chả cá dai ngọt, nước dùng thanh từ cá tươi, thêm chanh — hành ngâm — mắm ruốc là <b style="color:var(--red)">bùng vị</b>.<br><i>Da Nang's Michelin-recommended fish-cake noodle soup, since forever on Nguyễn Chí Thanh.</i></p>
-   <a class="cta" href="tel:+84945713171">Gọi ngay</a>
+   <a class="cta" href="tel:+84945713171"><span class="bse">Gọi ngay</span><span class="tr">Call now</span></a>
    <a class="cta o" href="https://zalo.me/84945713171" target="_blank" rel="noopener">Nhắn Zalo</a>
   </div>
   <div class="heroimg rv">
@@ -143,14 +149,14 @@ footer a{color:inherit}
   <p class="sub rv">Tô đầy đặn, ăn sáng hay ăn khuya đều hợp — giá niêm yết ngay tại quán</p>
   <div class="mcols">
    <div>
-    <div class="mrow rv"><div><h3>Bún chả cá</h3><div class="en">fish cake noodle soup — the Michelin classic</div></div><div class="p">30.000đ</div></div>
-    <div class="mrow rv"><div><h3>Bún chả cá đặc biệt</h3><div class="en">special — extra chả, extra love</div></div><div class="p">tại quán</div></div>
-    <div class="mrow rv"><div><h3>Bún cá thu / cá ngừ</h3><div class="en">mackerel or tuna noodle soup</div></div><div class="p">tại quán</div></div>
+    <div class="mrow rv"><div><h3>Bún chả cá</h3><div class="en tr">fish cake noodle soup — the Michelin classic</div></div><div class="p">30.000đ</div></div>
+    <div class="mrow rv"><div><h3>Bún chả cá đặc biệt</h3><div class="en tr">special — extra chả, extra love</div></div><div class="p">tại quán</div></div>
+    <div class="mrow rv"><div><h3><span class="bse">Bún cá thu</span><span class="tr">cá ngừ</span></h3><div class="en tr">mackerel or tuna noodle soup</div></div><div class="p">tại quán</div></div>
    </div>
    <div>
-    <div class="mrow rv"><div><h3>Chả cá chiên / hấp</h3><div class="en">fried or steamed fish cake, to share</div></div><div class="p">theo phần</div></div>
-    <div class="mrow rv"><div><h3>Chả cá mang về</h3><div class="en">fish cake to take home — great gift</div></div><div class="p">theo kg</div></div>
-    <div class="mrow rv"><div><h3>Trà đá, nước ngọt</h3><div class="en">iced tea &amp; drinks</div></div><div class="p">tại quán</div></div>
+    <div class="mrow rv"><div><h3><span class="bse">Chả cá chiên</span><span class="tr">hấp</span></h3><div class="en tr">fried or steamed fish cake, to share</div></div><div class="p">theo phần</div></div>
+    <div class="mrow rv"><div><h3>Chả cá mang về</h3><div class="en tr">fish cake to take home — great gift</div></div><div class="p">theo kg</div></div>
+    <div class="mrow rv"><div><h3>Trà đá, nước ngọt</h3><div class="en tr">iced tea &amp; drinks</div></div><div class="p">tại quán</div></div>
    </div>
   </div>
   <p class="mnote rv">* Tô bún chả cá 30.000đ theo giá niêm yết trên ảnh của quán — các món khác xem bảng giá tại quầy hoặc nhắn Zalo hỏi nhanh. Chả cá mang về gọi trước để phần.</p>
@@ -175,12 +181,12 @@ footer a{color:inherit}
 <section class="visit">
  <div class="wrap">
   <div>
-   <h2 class="rv">Ghé quán / Visit</h2>
-   <div class="vrow"><span class="k">Địa chỉ</span><span>109 Nguyễn Chí Thanh, Hải Châu, Đà Nẵng</span></div>
-   <div class="vrow"><span class="k">Giờ mở</span><span>6:00 — 22:00 · mỗi ngày (cả Chủ nhật)</span></div>
-   <div class="vrow"><span class="k">Điện thoại</span><span>0945 713 171</span></div>
+   <h2 class="rv"><span class="bse">Ghé quán</span><span class="tr">Visit</span></h2>
+   <div class="vrow"><span class="k"><span class="bse">Địa chỉ</span><span class="tr">Address</span></span><span>109 Nguyễn Chí Thanh, Hải Châu, Đà Nẵng</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Giờ mở</span><span class="tr">Hours</span></span><span>6:00 — 22:00 · mỗi ngày (cả Chủ nhật)</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Điện thoại</span><span class="tr">Phone</span></span><span>0945 713 171</span></div>
    <div class="vrow"><span class="k">Zalo</span><span>0945 713 171 — nhắn để đặt chả cá mang về</span></div>
-   <p style="margin-top:22px"><a class="cta" href="tel:+84945713171">Gọi 0945 713 171</a> <a class="cta o" href="https://www.google.com/maps?cid=311164930080020949" target="_blank" rel="noopener">Chỉ đường ↗</a></p>
+   <p style="margin-top:22px"><a class="cta" href="tel:+84945713171">Gọi 0945 713 171</a> <a class="cta o" href="https://www.google.com/maps?cid=311164930080020949" target="_blank" rel="noopener"><span class="bse">Chỉ đường</span><span class="tr">Directions</span> ↗</a></p>
   </div>
   <img class="rv" src="img/08.jpg" alt="Quán Bún Chả Cá 109">
  </div>
@@ -191,9 +197,9 @@ footer a{color:inherit}
 </footer>
 
 <nav class="bar">
- <a class="p" href="tel:+84945713171">📞 Gọi</a>
+ <a class="p" href="tel:+84945713171">📞 <span class="bse">Gọi</span><span class="tr">Call</span></a>
  <a class="z" href="https://zalo.me/84945713171" target="_blank" rel="noopener">Zalo</a>
- <a href="https://www.google.com/maps?cid=311164930080020949" target="_blank" rel="noopener">🗺 Bản đồ</a>
+ <a href="https://www.google.com/maps?cid=311164930080020949" target="_blank" rel="noopener">🗺 <span class="bse"><span class="bse">Bản đồ</span><span class="tr">Map</span></span><span class="tr">Map</span></a>
 </nav>
 
 <script>

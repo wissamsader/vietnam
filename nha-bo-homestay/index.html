@@ -111,10 +111,16 @@ footer{padding:26px 0 110px;color:#7d9060;font-size:13px;text-align:center;backg
 @media(max-width:700px){.pit{margin-left:14px}}
 .bar::before{content:'';position:absolute;top:-6px;left:0;right:0;height:7px;background:linear-gradient(135deg,#7ac97a 50%,transparent 50%) 0 0/10px 7px,linear-gradient(225deg,#7ac97a 50%,transparent 50%) 5px 0/10px 7px}.bar a.p{background:#7ac97a!important;border-radius:8px;box-shadow:3px 3px 0 rgba(0,0,0,.45)}
 @media(max-width:390px){.bar a{font-size:.78rem;padding-left:10px;padding-right:10px}}
+
+/* VI/EN toggle (07-13) */
+html.alt .bse{display:none!important}
+html:not(.alt) .tr{display:none!important}
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;z-index:80;cursor:pointer;border:0;font-weight:700;font-size:11.5px;letter-spacing:.14em;padding:9px 14px;border-radius:999px;line-height:1}
 </style>
 </head>
 <body>
 
+<button class="lgx" style="background:#fdf6e3;color:#3a6b3e;border:2px solid #7ac97a" onclick="document.documentElement.classList.toggle('alt')" aria-label="Language"><span class="bse">EN</span><span class="tr">VI</span></button>
 <header class="hero">
  <div class="wrap">
   <div>
@@ -157,7 +163,7 @@ footer{padding:26px 0 110px;color:#7d9060;font-size:13px;text-align:center;backg
    <div class="tick"><b>✓</b> sân thượng BBQ &amp; chill</div>
    <div class="tick"><b>✓</b> máy chiếu + màn hình lớn cho movie night</div>
    <div class="tick"><b>✓</b> chủ nhà chỉ đường ăn ngon "chuẩn local"</div>
-   <p class="en" style="margin-top:12px">Movie nights on the rooftop, BBQ evenings, local food tips — the homestay way.</p>
+   <p class="en tr" style="margin-top:12px">Movie nights on the rooftop, BBQ evenings, local food tips — the homestay way.</p>
   </div>
   <img class="rv" src="img/05.jpg" alt="Movie night ở NHÀ BƠ">
  </div>
@@ -183,11 +189,11 @@ footer{padding:26px 0 110px;color:#7d9060;font-size:13px;text-align:center;backg
  <div class="wrap">
   <div>
    <h2 class="rv">Về NHÀ BƠ</h2>
-   <div class="vrow"><span class="k">Địa chỉ</span><span>32 An Nhơn 7, An Hải, Đà Nẵng</span></div>
-   <div class="vrow"><span class="k">Điện thoại</span><span>0795 782 988</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Địa chỉ</span><span class="tr">Address</span></span><span>32 An Nhơn 7, An Hải, Đà Nẵng</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Điện thoại</span><span class="tr">Phone</span></span><span>0795 782 988</span></div>
    <div class="vrow"><span class="k">Zalo</span><span>0795 782 988 — hỏi phòng trống, giá theo đêm/tháng</span></div>
-   <div class="vrow"><span class="k">Nhận phòng</span><span>linh hoạt — nhắn giờ tới, nhà đón</span></div>
-   <p style="margin-top:22px"><a class="cta" href="tel:+84795782988">Gọi 0795 782 988</a> <a class="cta o" href="https://www.google.com/maps?cid=15832354052846819910" target="_blank" rel="noopener">Chỉ đường ↗</a></p>
+   <div class="vrow"><span class="k"><span class="bse">Nhận phòng</span><span class="tr">Check-in</span></span><span>linh hoạt — nhắn giờ tới, nhà đón</span></div>
+   <p style="margin-top:22px"><a class="cta" href="tel:+84795782988">Gọi 0795 782 988</a> <a class="cta o" href="https://www.google.com/maps?cid=15832354052846819910" target="_blank" rel="noopener"><span class="bse">Chỉ đường</span><span class="tr">Directions</span> ↗</a></p>
   </div>
   <img class="rv" src="img/02.jpg" alt="Sân thượng NHÀ BƠ">
  </div>
@@ -196,9 +202,9 @@ footer{padding:26px 0 110px;color:#7d9060;font-size:13px;text-align:center;backg
 <footer>NHÀ BƠ Homestay · 32 An Nhơn 7, An Hải, Đà Nẵng · 0795 782 988 · ★ 4,9 · <a href="https://www.google.com/maps?cid=15832354052846819910">Google Maps</a></footer>
 
 <nav class="bar">
- <a class="p" href="tel:+84795782988">📞 Đặt phòng</a>
+ <a class="p" href="tel:+84795782988">📞 <span class="bse">Đặt phòng</span><span class="tr">Book a room</span></a>
  <a class="z" href="https://zalo.me/84795782988" target="_blank" rel="noopener">Zalo</a>
- <a href="https://www.google.com/maps?cid=15832354052846819910" target="_blank" rel="noopener">🗺 Bản đồ</a>
+ <a href="https://www.google.com/maps?cid=15832354052846819910" target="_blank" rel="noopener">🗺 <span class="bse"><span class="bse">Bản đồ</span><span class="tr">Map</span></span><span class="tr">Map</span></a>
 </nav>
 
 <script>

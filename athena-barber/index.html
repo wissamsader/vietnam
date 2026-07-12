@@ -109,10 +109,16 @@ footer a{color:inherit}
 @media(max-width:700px){footer{padding-left:18px!important;padding-right:18px!important}}
 .bar{box-shadow:0 0 0 1.5px #c8a24b,0 0 18px -2px #c8a24b}.bar a.p{background:#c8a24b!important;transform:skewX(-7deg);border-radius:3px}
 @media(max-width:390px){.bar a{font-size:.78rem;padding-left:10px;padding-right:10px}}
+
+/* VI/EN toggle (07-13) */
+html.alt .bse{display:none!important}
+html:not(.alt) .tr{display:none!important}
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;z-index:80;cursor:pointer;border:0;font-weight:700;font-size:11.5px;letter-spacing:.14em;padding:9px 14px;border-radius:999px;line-height:1}
 </style>
 </head>
 <body>
 
+<button class="lgx" style="background:#0c0c0c;color:#c8a24b;border:1px solid #c8a24b" onclick="document.documentElement.classList.toggle('alt')" aria-label="Language"><span class="bse">EN</span><span class="tr">VI</span></button>
 <header class="hero">
  <div class="wrap">
   <div>
@@ -138,14 +144,14 @@ footer a{color:inherit}
   <p class="sub rv">— giá lẻ niêm yết tại quầy (₫) · combo signature 500.000đ theo menu "Gentlemen Groom &amp; Sip" của tiệm —</p>
   <div class="sgrid">
    <div>
-    <div class="srow rv"><div><h3>Cắt tóc nam + styling<span class="en">signature cut &amp; style</span></h3></div><span class="p">₫</span></div>
-    <div class="srow rv"><div><h3>Fade / skin fade<span class="en">the Athena fade — sharp as marble</span></h3></div><span class="p">₫</span></div>
-    <div class="srow rv"><div><h3>Cạo mặt khăn nóng<span class="en">hot towel shave</span></h3></div><span class="p">₫</span></div>
+    <div class="srow rv"><div><h3>Cắt tóc nam + styling<span class="en tr">signature cut &amp; style</span></h3></div><span class="p">₫</span></div>
+    <div class="srow rv"><div><h3>Fade / skin fade<span class="en tr">the Athena fade — sharp as marble</span></h3></div><span class="p">₫</span></div>
+    <div class="srow rv"><div><h3>Cạo mặt khăn nóng<span class="en tr">hot towel shave</span></h3></div><span class="p">₫</span></div>
    </div>
    <div>
-    <div class="srow rv"><div><h3>Gội đầu + massage vai gáy<span class="en">wash &amp; head-neck massage</span></h3></div><span class="p">₫</span></div>
-    <div class="srow rv"><div><h3>Uốn / nhuộm nam<span class="en">perm &amp; colour for men</span></h3></div><span class="p">₫</span></div>
-    <div class="srow rv"><div><h3>Combo "Gentlemen Groom &amp; Sip"<span class="en">signature drink + haircut + nose wax + herbal wash + wax/pomade + styling</span></h3></div><span class="p">500K</span></div>
+    <div class="srow rv"><div><h3>Gội đầu + massage vai gáy<span class="en tr">wash &amp; head-neck massage</span></h3></div><span class="p">₫</span></div>
+    <div class="srow rv"><div><h3>Uốn / nhuộm nam<span class="en tr">perm &amp; colour for men</span></h3></div><span class="p">₫</span></div>
+    <div class="srow rv"><div><h3>Combo "Gentlemen Groom &amp; Sip"<span class="en tr">signature drink + haircut + nose wax + herbal wash + wax/pomade + styling</span></h3></div><span class="p">500K</span></div>
    </div>
   </div>
  </div>
@@ -157,8 +163,8 @@ footer a{color:inherit}
   <div class="rv">
    <h2>Drinking <em>&amp;</em> Grooming</h2>
    <p>ATHENA không chỉ là tiệm tóc — là "câu lạc bộ quý ông" phiên bản Đà Nẵng. Gọi một ly ở quầy bar, chọn nhạc, rồi ngả lưng để barber lo phần còn lại.</p>
-   <p>Cà phê sáng, bia lạnh chiều, whisky tối — cắt xong không ai muốn về ngay.</p>
-   <p class="en">"Good vibe, good music, love the bar &amp; coffee station too. Haircut quality was also great at a good price point." — Jason, Google</p>
+   <p class="bse">Cà phê sáng, bia lạnh chiều, whisky tối — cắt xong không ai muốn về ngay.</p>
+   <p class="en tr">"Good vibe, good music, love the bar &amp; coffee station too. Haircut quality was also great at a good price point." — Jason, Google</p>
    <span class="gsip">🍸 Gentleman's Sip — signature menu tại quầy</span>
   </div>
  </div>
@@ -190,12 +196,12 @@ footer a{color:inherit}
  <div class="wrap">
   <div>
    <h2 class="rv">Ghé đền Athena</h2>
-   <div class="vrow"><span class="k">Địa chỉ</span><span>89 Hùng Vương, Hải Châu, Đà Nẵng</span></div>
-   <div class="vrow"><span class="k">Giờ mở</span><span>9:00 — 20:00 · mỗi ngày</span></div>
-   <div class="vrow"><span class="k">Điện thoại</span><span>0764 214 263</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Địa chỉ</span><span class="tr">Address</span></span><span>89 Hùng Vương, Hải Châu, Đà Nẵng</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Giờ mở</span><span class="tr">Hours</span></span><span>9:00 — 20:00 · mỗi ngày</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Điện thoại</span><span class="tr">Phone</span></span><span>0764 214 263</span></div>
    <div class="vrow"><span class="k">Zalo</span><span>0764 214 263 — đặt lịch trước, khỏi chờ</span></div>
    <div class="vrow"><span class="k">Facebook</span><span><a href="https://www.facebook.com/profile.php?id=100083368424144" target="_blank" rel="noopener" style="color:var(--gold2)">ATHENA BARBER SHOP ↗</a></span></div>
-   <p style="margin-top:22px"><a class="cta" href="tel:+84764214263">Gọi 0764 214 263</a> <a class="cta o" href="https://www.google.com/maps?cid=1069488749219596718" target="_blank" rel="noopener">Chỉ đường ↗</a></p>
+   <p style="margin-top:22px"><a class="cta" href="tel:+84764214263">Gọi 0764 214 263</a> <a class="cta o" href="https://www.google.com/maps?cid=1069488749219596718" target="_blank" rel="noopener"><span class="bse">Chỉ đường</span><span class="tr">Directions</span> ↗</a></p>
   </div>
   <img class="rv" src="img/09.jpg" alt="ATHENA Barber Shop">
  </div>
@@ -206,7 +212,7 @@ footer a{color:inherit}
 </footer>
 
 <nav class="bar">
- <a class="p" href="tel:+84764214263">📞 Đặt lịch</a>
+ <a class="p" href="tel:+84764214263">📞 <span class="bse"><span class="bse">Đặt lịch</span><span class="tr">Book</span></span><span class="tr">Book</span></a>
  <a class="z" href="https://zalo.me/84764214263" target="_blank" rel="noopener">Zalo</a>
  <a href="https://www.google.com/maps?cid=1069488749219596718" target="_blank" rel="noopener">🗺 Map</a>
 </nav>

@@ -94,10 +94,16 @@ footer a{color:inherit}
 @media(max-width:700px){footer{padding-left:18px!important;padding-right:18px!important}}
 .bar::before{content:'· · · · · ·';position:absolute;top:-12px;left:0;right:0;text-align:center;color:#e4642b;letter-spacing:10px;font-size:10px;line-height:1}.bar a.p{background:#e4642b!important;transform:skewX(-7deg);border-radius:3px}
 @media(max-width:390px){.bar a{font-size:.78rem;padding-left:10px;padding-right:10px}}
+
+/* VI/EN toggle (07-13) */
+html.alt .bse{display:none!important}
+html:not(.alt) .tr{display:none!important}
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;z-index:80;cursor:pointer;border:0;font-weight:700;font-size:11.5px;letter-spacing:.14em;padding:9px 14px;border-radius:999px;line-height:1}
 </style>
 </head>
 <body>
 
+<button class="lgx" style="background:#191512;color:#e4642b;border:1.5px solid #e4642b" onclick="document.documentElement.classList.toggle('alt')" aria-label="Language"><span class="bse">EN</span><span class="tr">VI</span></button>
 <header class="hero">
  <div class="embers"><i></i><i></i><i></i><i></i><i></i></div>
  <div class="wrap">
@@ -105,7 +111,7 @@ footer a{color:inherit}
   <div>
    <h1>Bún thịt nướng<br>Quán 339</h1>
    <p class="lead">Hơn 20 năm đỏ lửa trong hẻm 339 Tô Hiến Thành. Thịt ướp sả nướng than hoa, chả giò giòn rụm, nước mắm pha "chef's kiss" — đúng vị bún thịt nướng Sài Gòn xưa.<br><i>Charcoal-grilled pork bún in a lively District 10 alley — a local legend for 20+ years.</i></p>
-   <a class="cta" href="tel:+84908620631">Gọi ngay</a>
+   <a class="cta" href="tel:+84908620631"><span class="bse">Gọi ngay</span><span class="tr">Call now</span></a>
    <a class="cta o" href="https://zalo.me/84908620631" target="_blank" rel="noopener">Nhắn Zalo</a>
   </div>
  </div>
@@ -131,20 +137,20 @@ footer a{color:inherit}
   <p class="sub rv">Giá thật theo bảng treo tại quán — rau & bún thêm MIỄN PHÍ tại chỗ 1 phần</p>
   <div class="mgrid">
    <div>
-    <div class="mrow rv"><div><h3>Bún thịt đầy đủ (nem, thịt, chả)<span class="en">the full bowl — grilled pork, nem &amp; chả</span></h3></div><span class="p">35K</span></div>
-    <div class="mrow rv"><div><h3>Bún thịt nướng<span class="en">grilled pork over vermicelli</span></h3></div><span class="p">33K</span></div>
-    <div class="mrow rv"><div><h3>Bún nem nướng<span class="en">grilled pork sausage bún</span></h3></div><span class="p">35K</span></div>
-    <div class="mrow rv"><div><h3>Bún chả giò<span class="en">crispy spring rolls only</span></h3></div><span class="p">30K</span></div>
-    <div class="mrow rv"><div><h3>Bánh hỏi đầy đủ<span class="en">bánh hỏi with the works</span></h3></div><span class="p">38K</span></div>
-    <div class="mrow rv"><div><h3>Bánh hỏi heo quay<span class="en">bánh hỏi with roast pork</span></h3></div><span class="p">35K</span></div>
+    <div class="mrow rv"><div><h3>Bún thịt đầy đủ (nem, thịt, chả)<span class="en tr">the full bowl — grilled pork, nem &amp; chả</span></h3></div><span class="p">35K</span></div>
+    <div class="mrow rv"><div><h3>Bún thịt nướng<span class="en tr">grilled pork over vermicelli</span></h3></div><span class="p">33K</span></div>
+    <div class="mrow rv"><div><h3>Bún nem nướng<span class="en tr">grilled pork sausage bún</span></h3></div><span class="p">35K</span></div>
+    <div class="mrow rv"><div><h3>Bún chả giò<span class="en tr">crispy spring rolls only</span></h3></div><span class="p">30K</span></div>
+    <div class="mrow rv"><div><h3>Bánh hỏi đầy đủ<span class="en tr">bánh hỏi with the works</span></h3></div><span class="p">38K</span></div>
+    <div class="mrow rv"><div><h3>Bánh hỏi heo quay<span class="en tr">bánh hỏi with roast pork</span></h3></div><span class="p">35K</span></div>
    </div>
    <div>
-    <div class="mrow rv"><div><h3>Thêm thịt nướng<span class="en">extra grilled pork</span></h3></div><span class="p">30K</span></div>
-    <div class="mrow rv"><div><h3>Thêm heo quay<span class="en">extra roast pork</span></h3></div><span class="p">25K</span></div>
-    <div class="mrow rv"><div><h3>Thêm chả giò / nem<span class="en">extra rolls</span></h3></div><span class="p">12K</span></div>
-    <div class="mrow rv"><div><h3>Thêm bánh hỏi<span class="en">extra rice vermicelli sheets</span></h3></div><span class="p">6K</span></div>
-    <div class="mrow rv"><div><h3>Sữa bắp / hạt sen / gạo lứt<span class="en">house milks</span></h3></div><span class="p">15K</span></div>
-    <div class="mrow rv"><div><h3>Sâm mía 10K · Trà đá<span class="en">sugarcane herbal · iced tea</span></h3></div><span class="p">2K</span></div>
+    <div class="mrow rv"><div><h3>Thêm thịt nướng<span class="en tr">extra grilled pork</span></h3></div><span class="p">30K</span></div>
+    <div class="mrow rv"><div><h3>Thêm heo quay<span class="en tr">extra roast pork</span></h3></div><span class="p">25K</span></div>
+    <div class="mrow rv"><div><h3>Thêm chả giò / nem<span class="en tr">extra rolls</span></h3></div><span class="p">12K</span></div>
+    <div class="mrow rv"><div><h3>Thêm bánh hỏi<span class="en tr">extra rice vermicelli sheets</span></h3></div><span class="p">6K</span></div>
+    <div class="mrow rv"><div><h3>Sữa bắp / hạt sen / gạo lứt<span class="en tr">house milks</span></h3></div><span class="p">15K</span></div>
+    <div class="mrow rv"><div><h3>Sâm mía 10K · Trà đá<span class="en tr">sugarcane herbal · iced tea</span></h3></div><span class="p">2K</span></div>
    </div>
   </div>
  </div>
@@ -174,11 +180,11 @@ footer a{color:inherit}
  <div class="wrap">
   <div>
    <h2 class="rv">Ghé quán</h2>
-   <div class="vrow"><span class="k">Địa chỉ</span><span>Hẻm 339/7–9 Tô Hiến Thành, P. Hòa Hưng, Quận 10, TP.HCM</span></div>
-   <div class="vrow"><span class="k">Giờ mở</span><span>9:00 — 21:00 · mỗi ngày</span></div>
-   <div class="vrow"><span class="k">Điện thoại</span><span>0908 620 631</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Địa chỉ</span><span class="tr">Address</span></span><span>Hẻm 339/7–9 Tô Hiến Thành, P. Hòa Hưng, Quận 10, TP.HCM</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Giờ mở</span><span class="tr">Hours</span></span><span>9:00 — 21:00 · mỗi ngày</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Điện thoại</span><span class="tr">Phone</span></span><span>0908 620 631</span></div>
    <div class="vrow"><span class="k">Zalo</span><span>0908 620 631 — đặt phần mang về, giao gần</span></div>
-   <p style="margin-top:22px"><a class="cta" href="tel:+84908620631">Gọi 0908 620 631</a> <a class="cta o" href="https://www.google.com/maps?cid=17748382629489114835" target="_blank" rel="noopener">Chỉ đường ↗</a></p>
+   <p style="margin-top:22px"><a class="cta" href="tel:+84908620631">Gọi 0908 620 631</a> <a class="cta o" href="https://www.google.com/maps?cid=17748382629489114835" target="_blank" rel="noopener"><span class="bse">Chỉ đường</span><span class="tr">Directions</span> ↗</a></p>
   </div>
   <img class="rv" src="img/10.jpg" alt="Tô bún thịt nướng">
  </div>
@@ -189,7 +195,7 @@ footer a{color:inherit}
 </footer>
 
 <nav class="bar">
- <a class="p" href="tel:+84908620631">📞 Gọi</a>
+ <a class="p" href="tel:+84908620631">📞 <span class="bse">Gọi</span><span class="tr">Call</span></a>
  <a class="z" href="https://zalo.me/84908620631" target="_blank" rel="noopener">Zalo</a>
  <a href="https://www.google.com/maps?cid=17748382629489114835" target="_blank" rel="noopener">🗺 Hẻm 339</a>
 </nav>

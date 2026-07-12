@@ -114,10 +114,16 @@ footer{padding:26px 0 110px;color:#8f8799;font-size:13px;text-align:center;backg
 @media(max-width:700px){.circ{margin-left:14px}}
 .bar{box-shadow:0 0 0 1.5px #e8c04a,0 0 18px -2px #e8c04a}.bar a.p{background:#e8c04a!important;border-radius:999px;outline:2px solid #e8c04a;outline-offset:3px}
 @media(max-width:390px){.bar a{font-size:.78rem;padding-left:10px;padding-right:10px}}
+
+/* VI/EN toggle (07-13) */
+html.alt .bse{display:none!important}
+html:not(.alt) .tr{display:none!important}
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;z-index:80;cursor:pointer;border:0;font-weight:700;font-size:11.5px;letter-spacing:.14em;padding:9px 14px;border-radius:999px;line-height:1}
 </style>
 </head>
 <body>
 
+<button class="lgx" style="background:#101012;color:#e8c04a;border:1px solid #e8c04a" onclick="document.documentElement.classList.toggle('alt')" aria-label="Language"><span class="bse">EN</span><span class="tr">VI</span></button>
 <header class="hero">
  <div class="wrap">
   <div>
@@ -125,7 +131,7 @@ footer{padding:26px 0 110px;color:#8f8799;font-size:13px;text-align:center;backg
    <h1>Salon <em>Quốc Phong</em></h1>
    <div class="band">68 Lý Tự Trọng · 8:00 — 23:00</div>
    <p class="lead">Tóc đẹp là chuyện đương nhiên — nhưng head spa ở Quốc Phong mới là thứ khiến khách "đi một lần, nhớ cả tuần". Gội dưỡng sinh, massage da đầu, hơi ấm thảo mộc.<br><i>"The head spa here is truly an experience everyone should try at least once." — Google review</i></p>
-   <a class="cta" href="tel:+84797325325">Đặt lịch</a>
+   <a class="cta" href="tel:+84797325325"><span class="bse">Đặt lịch</span><span class="tr">Book</span></a>
    <a class="cta o" href="https://zalo.me/84797325325" target="_blank" rel="noopener">Zalo</a>
   </div>
   <div class="heroimg rv">
@@ -153,8 +159,8 @@ footer{padding:26px 0 110px;color:#8f8799;font-size:13px;text-align:center;backg
   <img class="rv" src="img/02.jpg" alt="Không gian salon">
   <div class="rv">
    <h2>Không chỉ là gội đầu — là <em>một giấc nghỉ</em></h2>
-   <p>Khách nằm xuống định "gội nhanh cái đầu", rồi tỉnh dậy sau 60 phút không muốn đi đâu nữa. Đó là lời kể chung của rất nhiều review 5 sao ở đây.</p>
-   <p class="en">"At first I only planned a simple hair wash to relax — what I received went far beyond my expectations. It wasn't just a regular shampoo session…" — Sasori, Google</p>
+   <p class="bse">Khách nằm xuống định "gội nhanh cái đầu", rồi tỉnh dậy sau 60 phút không muốn đi đâu nữa. Đó là lời kể chung của rất nhiều review 5 sao ở đây.</p>
+   <p class="en tr">"At first I only planned a simple hair wash to relax — what I received went far beyond my expectations. It wasn't just a regular shampoo session…" — Sasori, Google</p>
    <span class="hours">mở 8:00 — 23:00 · cả tuần</span>
   </div>
  </div>
@@ -166,14 +172,14 @@ footer{padding:26px 0 110px;color:#8f8799;font-size:13px;text-align:center;backg
   <p class="rv" style="text-align:center;color:#8f8799;font-size:13.5px;margin:-30px 0 40px">giá tuỳ độ dài & tình trạng tóc — nhắn Zalo kèm ảnh tóc để được báo giá chính xác trước khi tới</p>
   <div class="cols">
    <div>
-    <div class="srow rv"><div><h3>Head spa dưỡng sinh<span class="en">signature head spa ritual</span></h3></div><span class="p">₫</span></div>
-    <div class="srow rv"><div><h3>Cắt + tạo kiểu nữ / nam<span class="en">cut &amp; style</span></h3></div><span class="p">₫</span></div>
-    <div class="srow rv"><div><h3>Uốn định hình<span class="en">perm — soft waves to curls</span></h3></div><span class="p">₫</span></div>
+    <div class="srow rv"><div><h3>Head spa dưỡng sinh<span class="en tr">signature head spa ritual</span></h3></div><span class="p">₫</span></div>
+    <div class="srow rv"><div><h3>Cắt + tạo kiểu nữ / nam<span class="en tr">cut &amp; style</span></h3></div><span class="p">₫</span></div>
+    <div class="srow rv"><div><h3>Uốn định hình<span class="en tr">perm — soft waves to curls</span></h3></div><span class="p">₫</span></div>
    </div>
    <div>
-    <div class="srow rv"><div><h3>Nhuộm thời trang<span class="en">fashion colour &amp; highlights</span></h3></div><span class="p">₫</span></div>
-    <div class="srow rv"><div><h3>Phục hồi tóc hư tổn<span class="en">treatment &amp; repair</span></h3></div><span class="p">₫</span></div>
-    <div class="srow rv"><div><h3>Combo cô dâu / sự kiện<span class="en">bridal &amp; event styling</span></h3></div><span class="p">₫</span></div>
+    <div class="srow rv"><div><h3>Nhuộm thời trang<span class="en tr">fashion colour &amp; highlights</span></h3></div><span class="p">₫</span></div>
+    <div class="srow rv"><div><h3>Phục hồi tóc hư tổn<span class="en tr">treatment &amp; repair</span></h3></div><span class="p">₫</span></div>
+    <div class="srow rv"><div><h3>Combo cô dâu / sự kiện<span class="en tr">bridal &amp; event styling</span></h3></div><span class="p">₫</span></div>
    </div>
   </div>
  </div>
@@ -202,12 +208,12 @@ footer{padding:26px 0 110px;color:#8f8799;font-size:13px;text-align:center;backg
  <div class="wrap">
   <div>
    <h2 class="rv">Hẹn gặp ở salon</h2>
-   <div class="vrow"><span class="k">Địa chỉ</span><span>68 Lý Tự Trọng, Hải Châu, Đà Nẵng</span></div>
-   <div class="vrow"><span class="k">Giờ mở</span><span>8:00 — 23:00 · mỗi ngày</span></div>
-   <div class="vrow"><span class="k">Điện thoại</span><span>0797 325 325</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Địa chỉ</span><span class="tr">Address</span></span><span>68 Lý Tự Trọng, Hải Châu, Đà Nẵng</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Giờ mở</span><span class="tr">Hours</span></span><span>8:00 — 23:00 · mỗi ngày</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Điện thoại</span><span class="tr">Phone</span></span><span>0797 325 325</span></div>
    <div class="vrow"><span class="k">Zalo</span><span>0797 325 325 — đặt lịch, gửi ảnh mẫu tóc</span></div>
    <div class="vrow"><span class="k">Facebook</span><span><a href="https://www.facebook.com/QuocPhongHairSalon" target="_blank" rel="noopener" style="color:var(--rosegold)">fb.com/QuocPhongHairSalon ↗</a></span></div>
-   <p style="margin-top:22px"><a class="cta" href="tel:+84797325325">Gọi 0797 325 325</a> <a class="cta o" href="https://www.google.com/maps?cid=15135688478932285678" target="_blank" rel="noopener">Chỉ đường ↗</a></p>
+   <p style="margin-top:22px"><a class="cta" href="tel:+84797325325">Gọi 0797 325 325</a> <a class="cta o" href="https://www.google.com/maps?cid=15135688478932285678" target="_blank" rel="noopener"><span class="bse">Chỉ đường</span><span class="tr">Directions</span> ↗</a></p>
   </div>
   <img class="rv" src="img/04.jpg" alt="Salon Quốc Phong Đà Nẵng">
  </div>
@@ -216,9 +222,9 @@ footer{padding:26px 0 110px;color:#8f8799;font-size:13px;text-align:center;backg
 <footer>Salon Quốc Phong · 68 Lý Tự Trọng, Hải Châu, Đà Nẵng · 0797 325 325 · ★ 4,9 (1.845)</footer>
 
 <nav class="bar">
- <a class="p" href="tel:+84797325325">Đặt lịch</a>
+ <a class="p" href="tel:+84797325325"><span class="bse">Đặt lịch</span><span class="tr">Book</span></a>
  <a class="z" href="https://zalo.me/84797325325" target="_blank" rel="noopener">Zalo</a>
- <a href="https://www.google.com/maps?cid=15135688478932285678" target="_blank" rel="noopener">Bản đồ</a>
+ <a href="https://www.google.com/maps?cid=15135688478932285678" target="_blank" rel="noopener"><span class="bse">Bản đồ</span><span class="tr">Map</span></a>
 </nav>
 
 <script>

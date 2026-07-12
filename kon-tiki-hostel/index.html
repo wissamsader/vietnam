@@ -113,17 +113,23 @@ footer a{color:inherit}
 .ticket{padding-left:14px!important;padding-right:14px!important}
 .bar a.p{background:#0f6b66!important;border-radius:8px;box-shadow:3px 3px 0 rgba(0,0,0,.45)}
 @media(max-width:390px){.bar a{font-size:.78rem;padding-left:10px;padding-right:10px}}
+
+/* VI/EN toggle (07-13) */
+html.alt .bse{display:none!important}
+html:not(.alt) .tr{display:none!important}
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;z-index:80;cursor:pointer;border:0;font-weight:700;font-size:11.5px;letter-spacing:.14em;padding:9px 14px;border-radius:999px;line-height:1}
 </style>
 </head>
 <body>
 
+<button class="lgx" style="background:#f2ede0;color:#0f6b66;border:2px dashed #0f6b66" onclick="document.documentElement.classList.toggle('alt')" aria-label="Language"><span class="bse">VI</span><span class="tr">EN</span></button>
 <header class="hero">
  <div class="wrap">
   <div>
    <span class="stampline">DA NANG · 16.06°N 108.23°E · EST. FOR TRAVELLERS</span>
    <h1>KON-<em>TIKI</em><br>HOSTEL</h1>
    <p class="lead">Drop anchor between the Hàn River and Mỹ Khê beach. Capsule bunks with curtains, snug privates, a lounge full of maps, stories and cold drinks.
-   <span class="vi">Hostel cho dân du lịch bụi — giữa sông Hàn và biển Mỹ Khê, giường capsule &amp; phòng riêng.</span></p>
+   <span class="vi tr">Hostel cho dân du lịch bụi — giữa sông Hàn và biển Mỹ Khê, giường capsule &amp; phòng riêng.</span></p>
    <a class="cta" href="tel:+84772888894">Book a bunk</a>
    <a class="cta o" href="https://zalo.me/84772888894" target="_blank" rel="noopener">Zalo</a>
   </div>
@@ -141,9 +147,9 @@ footer a{color:inherit}
   <h2 class="rv">Choose your <span>berth</span></h2>
   <p class="sub rv">— every bed is a boarding pass · chọn "khoang" của bạn —</p>
   <div class="rgrid">
-   <article class="tag rv"><img src="img/03.jpg" alt="Capsule bunks"><div class="in"><h3>Capsule bunk</h3><div class="vi">giường tầng capsule có rèm</div><p>Dark-wood capsules with curtain, light &amp; socket — private enough, social enough.</p><div class="fare">Fare: backpacker-friendly</div></div></article>
-   <article class="tag rv"><img src="img/06.jpg" alt="Private cabin"><div class="in"><h3>Private cabin</h3><div class="vi">phòng riêng cho 2 người</div><p>A proper double bed, AC, hot shower — for when the dorm life needs a pause.</p><div class="fare">Fare: still friendly</div></div></article>
-   <article class="tag rv"><img src="img/04.jpg" alt="Crew lounge"><div class="in"><h3>The crew lounge</h3><div class="vi">phòng chung — ảnh, sách, cà phê</div><p>Gallery wall, long tables, morning coffee — where solo travellers stop being solo.</p><div class="fare">Fare: included</div></div></article>
+   <article class="tag rv"><img src="img/03.jpg" alt="Capsule bunks"><div class="in"><h3>Capsule bunk</h3><div class="vi tr">giường tầng capsule có rèm</div><p>Dark-wood capsules with curtain, light &amp; socket — private enough, social enough.</p><div class="fare">Fare: backpacker-friendly</div></div></article>
+   <article class="tag rv"><img src="img/06.jpg" alt="Private cabin"><div class="in"><h3>Private cabin</h3><div class="vi tr">phòng riêng cho 2 người</div><p>A proper double bed, AC, hot shower — for when the dorm life needs a pause.</p><div class="fare">Fare: still friendly</div></div></article>
+   <article class="tag rv"><img src="img/04.jpg" alt="Crew lounge"><div class="in"><h3>The crew lounge</h3><div class="vi tr">phòng chung — ảnh, sách, cà phê</div><p>Gallery wall, long tables, morning coffee — where solo travellers stop being solo.</p><div class="fare">Fare: included</div></div></article>
   </div>
  </div>
 </section>
@@ -185,10 +191,10 @@ footer a{color:inherit}
  <div class="wrap">
   <div>
    <h2 class="rv">Port of call</h2>
-   <div class="vrow"><span class="k">Address</span><span>12 Triệu Việt Vương, An Hải, Đà Nẵng</span></div>
-   <div class="vrow"><span class="k">Phone</span><span>0772 888 894</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Address</span><span class="tr">Địa chỉ</span></span><span>12 Triệu Việt Vương, An Hải, Đà Nẵng</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Phone</span><span class="tr">Điện thoại</span></span><span>0772 888 894</span></div>
    <div class="vrow"><span class="k">Zalo</span><span>0772 888 894 — beds, dates, scooter rental</span></div>
-   <div class="vrow"><span class="k">Check-in</span><span>from 14:00 · late arrivals welcome, just message ahead</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Check-in</span><span class="tr">Nhận phòng</span></span><span>from 14:00 · late arrivals welcome, just message ahead</span></div>
    <p style="margin-top:22px"><a class="cta" href="tel:+84772888894">Call the crew</a> <a class="cta o" href="https://www.google.com/maps?cid=15220368471799306822" target="_blank" rel="noopener">Chart course ↗</a></p>
   </div>
   <img class="rv" src="img/08.jpg" alt="Kon-Tiki bunks">
@@ -200,9 +206,9 @@ footer a{color:inherit}
 </footer>
 
 <nav class="bar">
- <a class="p" href="tel:+84772888894">📞 Call</a>
+ <a class="p" href="tel:+84772888894">📞 <span class="bse">Call</span><span class="tr">Gọi</span></a>
  <a class="z" href="https://zalo.me/84772888894" target="_blank" rel="noopener">Zalo</a>
- <a href="https://www.google.com/maps?cid=15220368471799306822" target="_blank" rel="noopener">🗺 Map</a>
+ <a href="https://www.google.com/maps?cid=15220368471799306822" target="_blank" rel="noopener">🗺 <span class="bse">Map</span><span class="tr">Bản đồ</span></a>
 </nav>
 
 <script>

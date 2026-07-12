@@ -95,9 +95,15 @@ footer{background:var(--s5);padding:26px 0 110px;color:rgba(255,255,255,.45);fon
 @media(max-width:700px){footer{padding-left:18px!important;padding-right:18px!important}}
 .bar::before{content:'∿∿∿∿∿∿';position:absolute;top:-13px;left:0;right:0;text-align:center;color:#5e8fa3;font-size:11px;letter-spacing:3px;line-height:1}.bar a.p{background:#5e8fa3!important;border-radius:999px;outline:2px solid #5e8fa3;outline-offset:3px}
 @media(max-width:390px){.bar a{font-size:.78rem;padding-left:10px;padding-right:10px}}
+
+/* VI/EN toggle (07-13) */
+html.alt .bse{display:none!important}
+html:not(.alt) .tr{display:none!important}
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;z-index:80;cursor:pointer;border:0;font-weight:700;font-size:11.5px;letter-spacing:.14em;padding:9px 14px;border-radius:999px;line-height:1}
 </style>
 </head>
 <body>
+<button class="lgx" style="background:rgba(6,31,51,.9);color:#cfe4ef;border:1px solid #5e8fa3" onclick="document.documentElement.classList.toggle('alt')" aria-label="Language"><span class="bse">EN</span><span class="tr">VI</span></button>
 <div class="depth">AN THƯỢNG 4 · MỸ KHÊ BEACH · ĐÀ NẴNG</div>
 
 <header class="hero">
@@ -106,7 +112,7 @@ footer{background:var(--s5);padding:26px 0 110px;color:rgba(255,255,255,.45);fon
    <span class="kicker">An Thượng · cách biển 3 phút đi bộ</span>
    <h1>DEEP <span>SPA</span></h1>
    <p class="lead">Càng xuống sâu, càng thả lỏng. Massage body, foot massage, đá nóng — mở cửa tới 1 giờ sáng cho những ngày chơi "hết pin".<br><i>Go deeper than the day — body &amp; foot massage near Mỹ Khê beach, open till 1 AM.</i></p>
-   <a class="cta" href="tel:+84777597127">Đặt lịch</a>
+   <a class="cta" href="tel:+84777597127"><span class="bse">Đặt lịch</span><span class="tr">Book</span></a>
    <a class="cta o" href="https://zalo.me/84777597127" target="_blank" rel="noopener">Zalo</a>
   </div>
   <div class="heroimg rv"><img src="img/01.jpg" alt="Deep Spa Đà Nẵng"></div>
@@ -118,13 +124,13 @@ footer{background:var(--s5);padding:26px 0 110px;color:rgba(255,255,255,.45);fon
  <div class="bubbles"><i></i><i></i><i></i><i></i></div>
  <span class="meter">−5m</span>
  <div class="wrap">
-  <h2 class="rv">Liệu trình / Treatments</h2>
+  <h2 class="rv"><span class="bse">Liệu trình</span><span class="tr">Treatments</span></h2>
   <p class="sub rv">Kỹ thuật viên lực tay chuẩn, hỏi bạn trước khi bắt đầu — nhẹ, vừa, hay sâu. Bảng giá niêm yết tại spa — nhắn Zalo để báo giá nhanh từng gói.</p>
   <div class="sgrid">
-   <div class="s rv"><span class="ic">🦶</span><h3>Foot massage</h3><div class="en">+ hot stones — free</div><p>Massage chân kiểu nằm — kèm đá nóng miễn phí, "cứu" đôi chân sau ngày dài.</p><span class="tag">khách mê nhất</span></div>
-   <div class="s rv"><span class="ic">💆</span><h3>Body massage</h3><div class="en">oil · pressure · hot towel</div><p>Dầu ấm, khăn nóng, lực tay theo yêu cầu — ngủ quên lúc nào không hay.</p></div>
-   <div class="s rv"><span class="ic">🔥</span><h3>Hot stone body</h3><div class="en">deep heat therapy</div><p>Đá bazan nóng thư giãn sâu cột sống lưng vai — dành cho ngày mỏi nhừ.</p></div>
-   <div class="s rv"><span class="ic">🌙</span><h3>Khung giờ khuya</h3><div class="en">open till 1 AM</div><p>Bay đêm, chơi khuya? Spa nhận khách tới 1 giờ sáng mỗi ngày.</p></div>
+   <div class="s rv"><span class="ic">🦶</span><h3>Foot massage</h3><div class="en tr">+ hot stones — free</div><p>Massage chân kiểu nằm — kèm đá nóng miễn phí, "cứu" đôi chân sau ngày dài.</p><span class="tag">khách mê nhất</span></div>
+   <div class="s rv"><span class="ic">💆</span><h3>Body massage</h3><div class="en tr">oil · pressure · hot towel</div><p>Dầu ấm, khăn nóng, lực tay theo yêu cầu — ngủ quên lúc nào không hay.</p></div>
+   <div class="s rv"><span class="ic">🔥</span><h3>Hot stone body</h3><div class="en tr">deep heat therapy</div><p>Đá bazan nóng thư giãn sâu cột sống lưng vai — dành cho ngày mỏi nhừ.</p></div>
+   <div class="s rv"><span class="ic">🌙</span><h3>Khung giờ khuya</h3><div class="en tr">open till 1 AM</div><p>Bay đêm, chơi khuya? Spa nhận khách tới 1 giờ sáng mỗi ngày.</p></div>
   </div>
  </div>
 </section>
@@ -157,11 +163,11 @@ footer{background:var(--s5);padding:26px 0 110px;color:rgba(255,255,255,.45);fon
  <div class="wrap">
   <div>
    <h2 class="rv">Chạm đáy — thả lỏng hoàn toàn</h2>
-   <div class="vrow"><span class="k">Địa chỉ</span><span>23 An Thượng 4, Ngũ Hành Sơn, Đà Nẵng</span></div>
-   <div class="vrow"><span class="k">Giờ mở</span><span>8:30 — 01:00 · mỗi ngày</span></div>
-   <div class="vrow"><span class="k">Điện thoại</span><span>0777 597 127</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Địa chỉ</span><span class="tr">Address</span></span><span>23 An Thượng 4, Ngũ Hành Sơn, Đà Nẵng</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Giờ mở</span><span class="tr">Hours</span></span><span>8:30 — 01:00 · mỗi ngày</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Điện thoại</span><span class="tr">Phone</span></span><span>0777 597 127</span></div>
    <div class="vrow"><span class="k">Zalo</span><span>0777 597 127 — nhắn giữ giờ, hỏi bảng giá</span></div>
-   <p style="margin-top:22px"><a class="cta" href="tel:+84777597127">Gọi đặt lịch</a> <a class="cta o" href="https://www.google.com/maps?cid=1092124288554882422" target="_blank" rel="noopener">Chỉ đường ↗</a></p>
+   <p style="margin-top:22px"><a class="cta" href="tel:+84777597127"><span class="bse">Gọi đặt lịch</span><span class="tr">Call to book</span></a> <a class="cta o" href="https://www.google.com/maps?cid=1092124288554882422" target="_blank" rel="noopener"><span class="bse">Chỉ đường</span><span class="tr">Directions</span> ↗</a></p>
   </div>
   <img class="rv" src="img/07.jpg" alt="Deep Spa">
  </div>
@@ -172,7 +178,7 @@ footer{background:var(--s5);padding:26px 0 110px;color:rgba(255,255,255,.45);fon
 </footer>
 
 <nav class="bar">
- <a class="p" href="tel:+84777597127">📞 Đặt lịch</a>
+ <a class="p" href="tel:+84777597127">📞 <span class="bse"><span class="bse">Đặt lịch</span><span class="tr">Book</span></span><span class="tr">Book</span></a>
  <a class="z" href="https://zalo.me/84777597127" target="_blank" rel="noopener">Zalo</a>
  <a href="https://www.google.com/maps?cid=1092124288554882422" target="_blank" rel="noopener">🗺 Map</a>
 </nav>

@@ -56,7 +56,7 @@ a{color:inherit}
 .svc{padding:40px 0 90px}
 .svc h2{text-align:center;font-size:clamp(26px,4vw,44px);color:#fff;margin-bottom:8px}
 .svc .sub{text-align:center;color:#948d7a;margin-bottom:52px;font-size:14.5px}
-.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;background:rgba(243,169,60,.25);border:1px solid rgba(243,169,60,.25);border-radius:16px;overflow:hidden}
+.sgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(243,169,60,.25);border:1px solid rgba(243,169,60,.25);border-radius:16px;overflow:hidden}
 .s{background:var(--indigo2);padding:34px 28px}
 .s .ic{font-size:26px;display:block;margin-bottom:14px}
 .s h3{font-size:20px;color:var(--amber2);margin-bottom:8px}
@@ -106,10 +106,17 @@ footer{padding:26px 0 110px;color:#948d7a;font-size:13px;border-top:1px solid rg
 .bar::before{content:'◦ ◦ ◦ ◦';position:absolute;top:-11px;left:0;right:0;text-align:center;color:#f2b330;letter-spacing:14px;font-size:9px;line-height:1;animation:vlan 2.2s steps(2,start) infinite}@keyframes vlan{to{opacity:.4}}.bar a.p{background:#f2b330!important;border-radius:50%;width:62px;height:62px;display:flex;align-items:center;justify-content:center;margin-top:-26px;border:3px solid #10162a;text-align:center;line-height:1.15}
 @media(max-width:390px){.bar a{font-size:.78rem;padding-left:10px;padding-right:10px}}
 .bar a.p{width:70px!important;height:70px!important;font-size:.72rem!important;padding:0!important}
+@media(max-width:560px){.sgrid{grid-template-columns:1fr}}
+
+/* VI/EN toggle (07-13) */
+html.alt .bse{display:none!important}
+html:not(.alt) .tr{display:none!important}
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;z-index:80;cursor:pointer;border:0;font-weight:700;font-size:11.5px;letter-spacing:.14em;padding:9px 14px;border-radius:999px;line-height:1}
 </style>
 </head>
 <body>
 
+<button class="lgx" style="background:#122142;color:#f2b330;border:1px solid #f2b330" onclick="document.documentElement.classList.toggle('alt')" aria-label="Language"><span class="bse">EN</span><span class="tr">VI</span></button>
 <header class="hero">
  <span class="lan"></span><span class="lan l2"></span><span class="lan l3"></span>
  <div class="wrap">
@@ -117,7 +124,7 @@ footer{padding:26px 0 110px;color:#948d7a;font-size:13px;border-top:1px solid rg
   <span class="kicker">Sơn Trà · Đà Nẵng</span>
   <h1>Hội An <em>Spa</em> &amp; Massage</h1>
   <p class="lead">Một góc Hội An đèn lồng ấm áp giữa lòng Đà Nẵng — nơi bạn buông hết mệt mỏi sau một ngày dài biển và nắng.<br><i>A lantern-lit corner of Hội An in Da Nang — 5.0★ from every single guest on Google.</i></p>
-  <a class="cta" href="tel:+84763684307">Đặt lịch / Book</a>
+  <a class="cta" href="tel:+84763684307"><span class="bse"><span class="bse">Đặt lịch</span><span class="tr">Book</span></span><span class="tr">Book</span></a>
   <a class="cta o" href="https://zalo.me/84763684307" target="_blank" rel="noopener">Zalo</a>
  </div>
 </header>
@@ -129,21 +136,21 @@ footer{padding:26px 0 110px;color:#948d7a;font-size:13px;border-top:1px solid rg
   <div class="rv">
    <h2>Chạm là <em>thả lỏng</em></h2>
    <p>Giường êm, đèn vàng dịu, tinh dầu thoang thoảng — Hội An Spa được khách khen vì đôi tay kỹ thuật và sự chu đáo "đúng kiểu người Hội An".</p>
-   <p>Ghé sau giờ biển, sau chuyến Bà Nà, hay đơn giản là một buổi tối muốn được chăm sóc — spa mở cửa tới khuya.</p>
-   <p class="en">"Staff were friendly, welcoming, professional… after the massage I still felt relaxed the next day." — Leon, Google</p>
+   <p class="bse">Ghé sau giờ biển, sau chuyến Bà Nà, hay đơn giản là một buổi tối muốn được chăm sóc — spa mở cửa tới khuya.</p>
+   <p class="en tr">"Staff were friendly, welcoming, professional… after the massage I still felt relaxed the next day." — Leon, Google</p>
   </div>
  </div>
 </section>
 
 <section class="svc">
  <div class="wrap">
-  <h2 class="rv">Liệu trình / Treatments</h2>
+  <h2 class="rv"><span class="bse">Liệu trình</span><span class="tr">Treatments</span></h2>
   <p class="sub rv">Bảng giá chi tiết tại spa — nhắn Zalo để giữ chỗ trước khung giờ tối</p>
   <div class="sgrid">
-   <div class="s rv"><span class="ic">🔥</span><h3>Massage đá nóng</h3><div class="en">hot stone body massage</div><p>Đá bazan ấm lăn dọc lưng vai — tan mỏi sau ngày dài đi biển, leo núi.</p></div>
-   <div class="s rv"><span class="ic">💆‍♀️</span><h3>Massage body thư giãn</h3><div class="en">relaxing body massage</div><p>Lực tay điều chỉnh theo ý bạn — nhẹ để ngủ ngon, sâu để giãn cơ.</p></div>
-   <div class="s rv"><span class="ic">🌸</span><h3>Chăm sóc da mặt</h3><div class="en">facial treatment</div><p>Làm sạch, dưỡng ẩm, thư giãn vùng mặt — da căng mịn tức thì.</p></div>
-   <div class="s rv"><span class="ic">🌿</span><h3>Combo trọn gói</h3><div class="en">facial + hair wash + neck &amp; foot</div><p>Gói "chiều chuộng từ đầu tới chân" — được khách đặt nhiều nhất.</p></div>
+   <div class="s rv"><span class="ic">🔥</span><h3>Massage đá nóng</h3><div class="en tr">hot stone body massage</div><p>Đá bazan ấm lăn dọc lưng vai — tan mỏi sau ngày dài đi biển, leo núi.</p></div>
+   <div class="s rv"><span class="ic">💆‍♀️</span><h3>Massage body thư giãn</h3><div class="en tr">relaxing body massage</div><p>Lực tay điều chỉnh theo ý bạn — nhẹ để ngủ ngon, sâu để giãn cơ.</p></div>
+   <div class="s rv"><span class="ic">🌸</span><h3>Chăm sóc da mặt</h3><div class="en tr">facial treatment</div><p>Làm sạch, dưỡng ẩm, thư giãn vùng mặt — da căng mịn tức thì.</p></div>
+   <div class="s rv"><span class="ic">🌿</span><h3>Combo trọn gói</h3><div class="en tr">facial + hair wash + neck &amp; foot</div><p>Gói "chiều chuộng từ đầu tới chân" — được khách đặt nhiều nhất.</p></div>
   </div>
  </div>
 </section>
@@ -171,12 +178,12 @@ footer{padding:26px 0 110px;color:#948d7a;font-size:13px;border-top:1px solid rg
 <section class="visit">
  <div class="wrap">
   <div>
-   <h2 class="rv">Ghé spa / Find us</h2>
-   <div class="vrow"><span class="k">Địa chỉ</span><span>142/2 Lê Văn Thứ, Sơn Trà, Đà Nẵng</span></div>
-   <div class="vrow"><span class="k">Giờ mở</span><span>Mỗi ngày · mở tới khuya (01:00)</span></div>
-   <div class="vrow"><span class="k">Điện thoại</span><span>0763 684 307</span></div>
+   <h2 class="rv"><span class="bse">Ghé spa</span><span class="tr">Find us</span></h2>
+   <div class="vrow"><span class="k"><span class="bse">Địa chỉ</span><span class="tr">Address</span></span><span>142/2 Lê Văn Thứ, Sơn Trà, Đà Nẵng</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Giờ mở</span><span class="tr">Hours</span></span><span>Mỗi ngày · mở tới khuya (01:00)</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Điện thoại</span><span class="tr">Phone</span></span><span>0763 684 307</span></div>
    <div class="vrow"><span class="k">Zalo</span><span>0763 684 307 — nhắn giữ chỗ, hỏi giá combo</span></div>
-   <p style="margin-top:22px"><a class="cta" href="tel:+84763684307">Gọi đặt lịch</a> <a class="cta o" href="https://www.google.com/maps?cid=9526718285524585443" target="_blank" rel="noopener">Chỉ đường ↗</a></p>
+   <p style="margin-top:22px"><a class="cta" href="tel:+84763684307"><span class="bse">Gọi đặt lịch</span><span class="tr">Call to book</span></a> <a class="cta o" href="https://www.google.com/maps?cid=9526718285524585443" target="_blank" rel="noopener"><span class="bse">Chỉ đường</span><span class="tr">Directions</span> ↗</a></p>
   </div>
   <img class="rv" src="img/01.jpg" alt="Hội An Spa">
  </div>
@@ -187,9 +194,9 @@ footer{padding:26px 0 110px;color:#948d7a;font-size:13px;border-top:1px solid rg
 </footer>
 
 <nav class="bar">
- <a class="p" href="tel:+84763684307">📞 Đặt lịch</a>
+ <a class="p" href="tel:+84763684307">📞 <span class="bse"><span class="bse">Đặt lịch</span><span class="tr">Book</span></span><span class="tr">Book</span></a>
  <a class="z" href="https://zalo.me/84763684307" target="_blank" rel="noopener">Zalo</a>
- <a href="https://www.google.com/maps?cid=9526718285524585443" target="_blank" rel="noopener">🗺 Bản đồ</a>
+ <a href="https://www.google.com/maps?cid=9526718285524585443" target="_blank" rel="noopener">🗺 <span class="bse"><span class="bse">Bản đồ</span><span class="tr">Map</span></span><span class="tr">Map</span></a>
 </nav>
 
 <script>

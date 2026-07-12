@@ -106,9 +106,15 @@ footer{background:var(--ink);color:#8a8f80;font-size:13px;padding:26px 0 110px;b
 @media(max-width:700px){footer{padding-left:18px!important;padding-right:18px!important}}
 .bar::after{content:'';position:absolute;inset:4px;border:1.5px dashed #f26d5b;border-radius:inherit;pointer-events:none;opacity:.65}.bar a.p{background:#f26d5b!important;border-radius:999px;animation:vnp 2.6s ease-in-out infinite}@keyframes vnp{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
 @media(max-width:390px){.bar a{font-size:.78rem;padding-left:10px;padding-right:10px}}
+
+/* VI/EN toggle (07-13) */
+html.alt .bse{display:none!important}
+html:not(.alt) .tr{display:none!important}
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;z-index:80;cursor:pointer;border:0;font-weight:700;font-size:11.5px;letter-spacing:.14em;padding:9px 14px;border-radius:999px;line-height:1}
 </style>
 </head>
 <body>
+<button class="lgx" style="background:#12303f;color:#f26d5b;border:2px solid #f26d5b" onclick="document.documentElement.classList.toggle('alt')" aria-label="Language"><span class="bse">VI</span><span class="tr">EN</span></button>
 <div class="mq"><span>HOSTEL · CAFE · FOOD · BEER · 684/28 TRẦN HƯNG ĐẠO · SAIGON · 4.9★ FROM 240+ GUESTS · HOSTEL · CAFE · FOOD · BEER · YOUR ZONE IN SAIGON ·</span></div>
 
 <header class="hero">
@@ -116,7 +122,7 @@ footer{background:var(--ink);color:#8a8f80;font-size:13px;padding:26px 0 110px;b
   <div>
    <h1>T ZONE<span class="out">HOUSE</span></h1>
    <p class="lead">A hostel hidden in a classic Saigon alley — bunks &amp; private rooms upstairs, cafe + cold beer downstairs, the whole city outside.
-   <span class="vi">Hostel trong hẻm Sài Gòn chính hiệu — giường tầng &amp; phòng riêng, cà phê và bia lạnh ngay tầng trệt.</span></p>
+   <span class="vi tr">Hostel trong hẻm Sài Gòn chính hiệu — giường tầng &amp; phòng riêng, cà phê và bia lạnh ngay tầng trệt.</span></p>
    <a class="cta" href="tel:+84766534866">Book a bed</a>
    <a class="cta o" href="https://zalo.me/84766534866" target="_blank" rel="noopener">Zalo us</a>
   </div>
@@ -141,9 +147,9 @@ footer{background:var(--ink);color:#8a8f80;font-size:13px;padding:26px 0 110px;b
   <h2 class="rv">Pick your <span>zone</span></h2>
   <p class="sub rv">Chọn "khu" của bạn — giường tầng tiết kiệm hay phòng riêng yên tĩnh</p>
   <div class="rgrid">
-   <article class="room rv"><img src="img/04.jpg" alt="Bunk zone"><div class="in"><h3>The Bunk Zone</h3><div class="vi">giường tầng có rèm riêng tư</div><p>Curtained bunks, personal light + socket, lockers. Backpacker classic done right.</p></div></article>
-   <article class="room rv"><img src="img/05.jpg" alt="Private room"><div class="in"><h3>The Private Zone</h3><div class="vi">phòng đôi riêng</div><p>A quiet double with AC and hot shower — hostel prices, hotel sleep.</p></div></article>
-   <article class="room rv"><img src="img/03.jpg" alt="Common zone"><div class="in"><h3>The Common Zone</h3><div class="vi">khu chung — cà phê, bia, chuyện trò</div><p>The downstairs bar-cafe where plans are made and beers are emptied.</p></div></article>
+   <article class="room rv"><img src="img/04.jpg" alt="Bunk zone"><div class="in"><h3>The Bunk Zone</h3><div class="vi tr">giường tầng có rèm riêng tư</div><p>Curtained bunks, personal light + socket, lockers. Backpacker classic done right.</p></div></article>
+   <article class="room rv"><img src="img/05.jpg" alt="Private room"><div class="in"><h3>The Private Zone</h3><div class="vi tr">phòng đôi riêng</div><p>A quiet double with AC and hot shower — hostel prices, hotel sleep.</p></div></article>
+   <article class="room rv"><img src="img/03.jpg" alt="Common zone"><div class="in"><h3>The Common Zone</h3><div class="vi tr">khu chung — cà phê, bia, chuyện trò</div><p>The downstairs bar-cafe where plans are made and beers are emptied.</p></div></article>
   </div>
  </div>
 </section>
@@ -183,10 +189,10 @@ footer{background:var(--ink);color:#8a8f80;font-size:13px;padding:26px 0 110px;b
  <div class="wrap">
   <div>
    <h2 class="rv">Find the zone</h2>
-   <div class="vrow"><span class="k">Address</span><span>684/28 Trần Hưng Đạo, Quận 5, TP.HCM<br><i style="color:#8a8f80;font-size:13px">— into the alley, look for the plants &amp; the sign</i></span></div>
-   <div class="vrow"><span class="k">Phone</span><span>0766 534 866</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Address</span><span class="tr">Địa chỉ</span></span><span>684/28 Trần Hưng Đạo, Quận 5, TP.HCM<br><i style="color:#8a8f80;font-size:13px">— into the alley, look for the plants &amp; the sign</i></span></div>
+   <div class="vrow"><span class="k"><span class="bse">Phone</span><span class="tr">Điện thoại</span></span><span>0766 534 866</span></div>
    <div class="vrow"><span class="k">Zalo</span><span>0766 534 866 — message for rates &amp; dates</span></div>
-   <div class="vrow"><span class="k">Check-in</span><span>flexible — tell us when you land</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Check-in</span><span class="tr">Nhận phòng</span></span><span>flexible — tell us when you land</span></div>
    <p style="margin-top:22px"><a class="cta" href="tel:+84766534866">Call us</a> <a class="cta o" href="https://www.google.com/maps?cid=1999795943920485403" target="_blank" rel="noopener">Directions ↗</a></p>
   </div>
   <img class="rv" src="img/02.jpg" alt="T Zone House">
@@ -198,9 +204,9 @@ footer{background:var(--ink);color:#8a8f80;font-size:13px;padding:26px 0 110px;b
 </footer>
 
 <nav class="bar">
- <a class="p" href="tel:+84766534866">📞 Call</a>
+ <a class="p" href="tel:+84766534866">📞 <span class="bse">Call</span><span class="tr">Gọi</span></a>
  <a class="z" href="https://zalo.me/84766534866" target="_blank" rel="noopener">Zalo</a>
- <a href="https://www.google.com/maps?cid=1999795943920485403" target="_blank" rel="noopener">🗺 Map</a>
+ <a href="https://www.google.com/maps?cid=1999795943920485403" target="_blank" rel="noopener">🗺 <span class="bse">Map</span><span class="tr">Bản đồ</span></a>
 </nav>
 
 <script>

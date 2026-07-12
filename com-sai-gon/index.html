@@ -102,10 +102,16 @@ footer a{color:inherit}
 @media(max-width:700px){footer{padding-left:18px!important;padding-right:18px!important}}
 .bar::before{content:'· · · · · ·';position:absolute;top:-12px;left:0;right:0;text-align:center;color:#1f8a52;letter-spacing:10px;font-size:10px;line-height:1}.bar a.p{background:#1f8a52!important;border-radius:10px}
 @media(max-width:390px){.bar a{font-size:.78rem;padding-left:10px;padding-right:10px}}
+
+/* VI/EN toggle (07-13) */
+html.alt .bse{display:none!important}
+html:not(.alt) .tr{display:none!important}
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;z-index:80;cursor:pointer;border:0;font-weight:700;font-size:11.5px;letter-spacing:.14em;padding:9px 14px;border-radius:999px;line-height:1}
 </style>
 </head>
 <body>
 
+<button class="lgx" style="background:#1f8a52;color:#f6f0e0;border:0" onclick="document.documentElement.classList.toggle('alt')" aria-label="Language"><span class="bse">EN</span><span class="tr">VI</span></button>
 <header class="hero">
  <div class="wrap">
   <div>
@@ -113,7 +119,7 @@ footer a{color:inherit}
    <h1>Com <em>Sai Gon</em></h1>
    <span class="hand sub">— cơm nhà nấu, như má nấu —</span>
    <p class="lead">Dĩa cơm tấm nóng hổi, món kho món xào đổi mỗi ngày, canh nêm vừa miệng. Quán nhỏ trong hẻm, chủ quán niềm nở — khách Tây khen "the owner made us feel like family".<br><i>Home-style Saigon rice in a little Phú Nhuận alley — 4.9★ from 1,300+ Google reviews.</i></p>
-   <a class="cta" href="tel:+84906680222">Gọi ngay</a>
+   <a class="cta" href="tel:+84906680222"><span class="bse">Gọi ngay</span><span class="tr">Call now</span></a>
    <a class="cta o" href="https://zalo.me/84906680222" target="_blank" rel="noopener">Nhắn Zalo</a>
   </div>
   <div class="heroimg rv">
@@ -142,10 +148,10 @@ footer a{color:inherit}
   <h2 class="rv">Món "ruột" của quán</h2>
   <p class="sub rv">Giá theo menu của quán — phần đầy, hôm nào hết sớm là… hết thiệt</p>
   <div class="cards">
-   <article class="card rv"><img src="img/03.jpg" alt="Sườn nướng"><div class="in"><h3>Cơm tấm sườn nướng</h3><div class="en">grilled pork chop — 40.000đ</div><p>Ướp qua đêm, nướng cháy cạnh — món được gọi nhiều nhất.</p></div></article>
-   <article class="card rv"><img src="img/09.jpg" alt="Sườn bì chả"><div class="in"><h3>Sườn bì chả "full option"</h3><div class="en">the full trilogy — 59.000đ</div><p>Sườn + bì + chả trứng: phần cơm tấm đầy đủ nhất của quán.</p></div></article>
-   <article class="card rv"><img src="img/06.jpg" alt="Gà nướng"><div class="in"><h3>Cơm gà phi lê nướng & ốp la</h3><div class="en">grilled chicken fillet + egg — 45.000đ</div><p>Gà mềm thơm sả, thêm trứng ốp la lòng đào 8.000đ là "chuẩn bài".</p></div></article>
-   <article class="card rv"><img src="img/12.jpg" alt="Canh"><div class="in"><h3>Canh nhà — 13.000đ</h3><div class="en">daily home soups</div><p>Canh rong biển thịt bằm, tần ô, khổ qua nhồi thịt (17k) — nêm kiểu má nấu.</p></div></article>
+   <article class="card rv"><img src="img/03.jpg" alt="Sườn nướng"><div class="in"><h3>Cơm tấm sườn nướng</h3><div class="en tr">grilled pork chop — 40.000đ</div><p>Ướp qua đêm, nướng cháy cạnh — món được gọi nhiều nhất.</p></div></article>
+   <article class="card rv"><img src="img/09.jpg" alt="Sườn bì chả"><div class="in"><h3>Sườn bì chả "full option"</h3><div class="en tr">the full trilogy — 59.000đ</div><p>Sườn + bì + chả trứng: phần cơm tấm đầy đủ nhất của quán.</p></div></article>
+   <article class="card rv"><img src="img/06.jpg" alt="Gà nướng"><div class="in"><h3>Cơm gà phi lê nướng & ốp la</h3><div class="en tr">grilled chicken fillet + egg — 45.000đ</div><p>Gà mềm thơm sả, thêm trứng ốp la lòng đào 8.000đ là "chuẩn bài".</p></div></article>
+   <article class="card rv"><img src="img/12.jpg" alt="Canh"><div class="in"><h3>Canh nhà — 13.000đ</h3><div class="en tr">daily home soups</div><p>Canh rong biển thịt bằm, tần ô, khổ qua nhồi thịt (17k) — nêm kiểu má nấu.</p></div></article>
   </div>
   <p class="rv" style="margin-top:24px;font-size:14px;color:#8f8867">Thêm: đùi gà nướng 42k · ba rọi/nạc dăm nướng 45k · cá basa kho nước dừa 40k · bì-chả/ốp la 32k · cơm thêm 6k · trà đá 3k · cam vắt 22k — menu đầy đủ tại quán.</p>
  </div>
@@ -178,12 +184,12 @@ footer a{color:inherit}
  <div class="wrap">
   <div>
    <h2 class="rv">Ghé ăn cơm</h2>
-   <div class="vrow"><span class="k">Địa chỉ</span><span>86/16 Thích Quảng Đức, P. Đức Nhuận (Phú Nhuận), TP.HCM</span></div>
-   <div class="vrow"><span class="k">Giờ mở</span><span>T2–T6: 10:00–20:00 · T7–CN: 10:00–15:30</span></div>
-   <div class="vrow"><span class="k">Điện thoại</span><span>0906 680 222</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Địa chỉ</span><span class="tr">Address</span></span><span>86/16 Thích Quảng Đức, P. Đức Nhuận (Phú Nhuận), TP.HCM</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Giờ mở</span><span class="tr">Hours</span></span><span>T2–T6: 10:00–20:00 · T7–CN: 10:00–15:30</span></div>
+   <div class="vrow"><span class="k"><span class="bse">Điện thoại</span><span class="tr">Phone</span></span><span>0906 680 222</span></div>
    <div class="vrow"><span class="k">Zalo</span><span>0906 680 222 — đặt cơm văn phòng, cơm mang về</span></div>
    <div class="vrow"><span class="k">Facebook</span><span><a href="https://www.facebook.com/comsaigon.net" target="_blank" rel="noopener" style="color:var(--leaf)">fb.com/comsaigon.net ↗</a></span></div>
-   <p style="margin-top:22px"><a class="cta" href="tel:+84906680222">Gọi 0906 680 222</a> <a class="cta o" style="color:var(--rice);border-color:var(--leaf)" href="https://www.google.com/maps?cid=16786797399773142628" target="_blank" rel="noopener">Chỉ đường ↗</a></p>
+   <p style="margin-top:22px"><a class="cta" href="tel:+84906680222">Gọi 0906 680 222</a> <a class="cta o" style="color:var(--rice);border-color:var(--leaf)" href="https://www.google.com/maps?cid=16786797399773142628" target="_blank" rel="noopener"><span class="bse">Chỉ đường</span><span class="tr">Directions</span> ↗</a></p>
   </div>
   <img class="rv" src="img/02.jpg" alt="Món ăn Com Sai Gon">
  </div>
@@ -194,9 +200,9 @@ footer a{color:inherit}
 </footer>
 
 <nav class="bar">
- <a class="p" href="tel:+84906680222">📞 Gọi</a>
+ <a class="p" href="tel:+84906680222">📞 <span class="bse">Gọi</span><span class="tr">Call</span></a>
  <a class="z" href="https://zalo.me/84906680222" target="_blank" rel="noopener">Zalo</a>
- <a href="https://www.google.com/maps?cid=16786797399773142628" target="_blank" rel="noopener">🗺 Bản đồ</a>
+ <a href="https://www.google.com/maps?cid=16786797399773142628" target="_blank" rel="noopener">🗺 <span class="bse"><span class="bse">Bản đồ</span><span class="tr">Map</span></span><span class="tr">Map</span></a>
 </nav>
 
 <script>

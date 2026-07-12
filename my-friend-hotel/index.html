@@ -103,17 +103,23 @@ footer{padding:0 0 110px;color:#8d8577;font-size:13px;text-align:center}
 @media(max-width:700px){footer{padding-left:18px!important;padding-right:18px!important}}
 .bar{box-shadow:0 0 0 1.5px #4fa3d9,0 0 18px -2px #4fa3d9}.bar a.p{background:#4fa3d9!important;border-radius:10px}
 @media(max-width:390px){.bar a{font-size:.78rem;padding-left:10px;padding-right:10px}}
+
+/* VI/EN toggle (07-13) */
+html.alt .bse{display:none!important}
+html:not(.alt) .tr{display:none!important}
+.lgx{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;z-index:80;cursor:pointer;border:0;font-weight:700;font-size:11.5px;letter-spacing:.14em;padding:9px 14px;border-radius:999px;line-height:1}
 </style>
 </head>
 <body>
 
+<button class="lgx" style="background:#4fa3d9;color:#fff;border:2px solid #fff" onclick="document.documentElement.classList.toggle('alt')" aria-label="Language"><span class="bse">VI</span><span class="tr">EN</span></button>
 <header class="hero">
  <div class="wrap">
   <div>
    <span class="hand hi">xin chào, bạn mới tới Sài Gòn hả? →</span>
    <h1>MY <em>FRIEND</em> HOTEL</h1>
    <p class="lead">The name is the promise: honest rooms at honest prices, a rooftop with district views, a small pool to cool off — and a front desk that treats you like, well, a friend.
-   <span class="vi">Phòng sạch giá thật, sân thượng ngắm phố, hồ bơi nhỏ — và lễ tân thân thiện như một người bạn.</span></p>
+   <span class="vi tr">Phòng sạch giá thật, sân thượng ngắm phố, hồ bơi nhỏ — và lễ tân thân thiện như một người bạn.</span></p>
    <a class="cta" href="tel:+842839245678">Call reception</a>
    <a class="cta o" href="https://www.google.com/maps?cid=10932936298715317515" target="_blank" rel="noopener">Find us</a>
   </div>
@@ -174,9 +180,9 @@ footer{padding:0 0 110px;color:#8d8577;font-size:13px;text-align:center}
   <div class="card rv">
    <div>
     <h2>Come say hi 👋</h2>
-    <div class="vrow"><span class="k">Address</span><span>572b/4 Trần Hưng Đạo, Chợ Quán, Quận 5, TP.HCM</span></div>
-    <div class="vrow"><span class="k">Phone</span><span>028 3924 5678 — reception, EN/VI</span></div>
-    <div class="vrow"><span class="k">Check-in</span><span>24/7 — call ahead if you land after midnight</span></div>
+    <div class="vrow"><span class="k"><span class="bse">Address</span><span class="tr">Địa chỉ</span></span><span>572b/4 Trần Hưng Đạo, Chợ Quán, Quận 5, TP.HCM</span></div>
+    <div class="vrow"><span class="k"><span class="bse">Phone</span><span class="tr">Điện thoại</span></span><span>028 3924 5678 — reception, EN/VI</span></div>
+    <div class="vrow"><span class="k"><span class="bse">Check-in</span><span class="tr">Nhận phòng</span></span><span>24/7 — call ahead if you land after midnight</span></div>
     <p style="margin-top:20px"><a class="cta" href="tel:+842839245678">Call 028 3924 5678</a> <a class="cta o" href="https://www.google.com/maps?cid=10932936298715317515" target="_blank" rel="noopener">Directions ↗</a></p>
    </div>
    <img src="img/02.jpg" alt="My Friend Hotel room">
@@ -187,8 +193,8 @@ footer{padding:0 0 110px;color:#8d8577;font-size:13px;text-align:center}
 <footer>My Friend Hotel · 572b/4 Trần Hưng Đạo, Q5, TP.HCM · 028 3924 5678 · ★ 4.3 (420+)</footer>
 
 <nav class="bar">
- <a class="p" href="tel:+842839245678">📞 Call</a>
- <a href="https://www.google.com/maps?cid=10932936298715317515" target="_blank" rel="noopener">🗺 Map</a>
+ <a class="p" href="tel:+842839245678">📞 <span class="bse">Call</span><span class="tr">Gọi</span></a>
+ <a href="https://www.google.com/maps?cid=10932936298715317515" target="_blank" rel="noopener">🗺 <span class="bse">Map</span><span class="tr">Bản đồ</span></a>
 </nav>
 
 <script>
